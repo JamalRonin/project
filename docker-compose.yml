@@ -44,7 +44,7 @@ services: # Les services sont nécessaires pour le fonctionnement de l'applicati
 
     www:
         build: php #Ici on build le répertoire php
-        container_name: www_project
+        container_name: projectIndex
         ports:
             - "8741:80"
         
