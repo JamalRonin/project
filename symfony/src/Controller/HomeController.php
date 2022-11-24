@@ -17,4 +17,45 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    /**
+     * @Route("/about", name="app_about")
+     */
+    public function about(): Response
+    {
+        return $this->render('about/index.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/contact", name="app_contact")
+     */
+    public function contact(): Response
+    {
+        return $this->render('contact/index.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/faq", name="app_faq")
+     */
+    public function faq(): Response
+    {
+        return $this->render('faq/index.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    /**
+     * @Route("/devis", name="app_devis")
+     */
+    public function devis(): Response
+    {
+        return $this->render('devis/index.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
+
