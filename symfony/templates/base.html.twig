@@ -6,11 +6,39 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            {# {{ encore_entry_link_tags('app') }} #}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/uicons-regular-rounded.css') }}">
+			<link rel="stylesheet" href="{{ asset('fonts/flaticon.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/off-canvas.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/rsmenu-main.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/rs-spacing.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/styleNet.css') }}">
+			<!-- Template Main CSS File -->
+			<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            {# {{ encore_entry_script_tags('app') }} #}
+            <script src="{{ asset('js/modernizr-2.8.3.min.js')}}"></script>
+			<script src="{{ asset('js/jquery.min.js')}}"></script>
+			<script src="{{ asset('js/bootstrap.min.js')}}"></script>
+			<script src="{{ asset('js/jquery.nav.js')}}"></script>
+			<script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+			<script src="{{ asset('js/wow.min.js')}}"></script>
+			<script src="{{ asset('js/skill.bars.jquery.js')}}"></script>
+			<script src="{{ asset('js/imagesloaded.pkgd.min.js')}}"></script>
+			<script src="{{ asset('js/jquery.counterup.min.js')}}"></script>
+			<script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+			<script src="{{ asset('js/contact.form.js')}}"></script>
+			<script src="{{ asset('js/mainNet.js')}}"></script>
+			<script src="{{ asset('js/constraintForm.js')}}"></script>
+			<script src="{{ asset('js/collapse.js')}}"></script>
+			<script src="{{ asset('js/constraintFormPro.js')}}"></script>
         {% endblock %}
     </head>
     <body>
