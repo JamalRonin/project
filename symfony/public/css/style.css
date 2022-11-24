@@ -282,99 +282,99 @@ ul {
   color: #ffffff;
 }
 .bg1 {
-  background: url(assets/images/bg/choose-us-bg.png);
+  background: url(../images/bg/choose-us-bg.png);
   background-position: 1600px 420px;
   background-repeat: no-repeat;
 }
 .bg2 {
-  background: url(assets/images/bg/services-bg1.jpg);
+  background: url(../images/bg/services-bg1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg3 {
-  background: url(assets/images/bg/cleaning-bg.jpg);
+  background: url(../images/bg/cleaning-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg4 {
-  background-image: url(assets/images/bg/process-bg.jpg);
+  background-image: url(../images/bg/process-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg5 {
-  background-image: url(assets/images/bg/project-bg.jpg);
+  background-image: url(../images/bg/project-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0px 253px 0px;
 }
 .bg6 {
-  background: url(assets/images/bg/pricing-bg.png);
+  background: url(../images/bg/pricing-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg7 {
-  background: url(assets/images/bg/testi-bg.jpg);
+  background: url(../images/bg/testi-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg8 {
-  background: url(assets/images/bg/choose-us-bg.png);
+  background: url(../images/bg/choose-us-bg.png);
   background-position: 10% 72%;
   background-repeat: no-repeat;
 }
 .bg9 {
-  background: url(assets/images/about/style3/2.png);
+  background: url(../images/about/style3/2.png);
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 .bg10 {
-  background: url(assets/images/bg/counter-bg3.jpg);
+  background: url(../images/bg/counter-bg3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg11 {
-  background-image: url(assets/images/bg/testi-bg3.jpg);
+  background-image: url(../images/bg/testi-bg3.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg12 {
-  background-image: url(assets/images/bg/quote-bg4.jpg);
+  background-image: url(../images/bg/quote-bg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg14 {
-  background-image: url(assets/images/bg/icon.png);
+  background-image: url(../images/bg/icon.png);
   background-position: 1600px 420px;
   background-repeat: no-repeat;
 }
 .bg15 {
-  background: url(assets/images/bg/counter-bg5.jpg);
+  background: url(../images/bg/counter-bg5.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg16 {
-  background: url(assets/images/bg/quote-form-bg.jpg);
+  background: url(../images/bg/quote-form-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: cover;
 }
 .bg17 {
   background-color: #00483A;
-  background: url(assets/images/bg/testi-bg5.jpg);
+  background: url(../images/bg/testi-bg5.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .offwrap {
-  cursor: url(assets/images/close.png), auto;
+  cursor: url(../images/close.png), auto;
   width: 100%;
   left: 100%;
   transition: all 0.8s ease-out 0s;
@@ -2798,7 +2798,7 @@ body .search-modal .close:hover {
 }
 .rs-about.style1 .about-images .about-widget .about-style {
   padding: 25px 40px 25px 105px;
-  background-image: url(assets/images/about/style1/ibg.png);
+  background-image: url(../images/about/style1/ibg.png);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3039,25 +3039,25 @@ body .search-modal .close:hover {
   color: #ffffff;
 }
 .rs-breadcrumbs.img1 {
-  background: url(assets/images/breadcrumbs/inr-1.jpg);
+  background: url(../images/breadcrumbs/inr-1.jpg);
 }
 .rs-breadcrumbs.img2 {
-  background: url(assets/images/breadcrumbs/inr-2.jpg);
+  background: url(../images/breadcrumbs/inr-2.jpg);
 }
 .rs-breadcrumbs.img3 {
-  background: url(assets/images/breadcrumbs/inr-3.jpg);
+  background: url(../images/breadcrumbs/inr-3.jpg);
 }
 .rs-breadcrumbs.img4 {
-  background: url(assets/images/breadcrumbs/inr-4.jpg);
+  background: url(../images/breadcrumbs/inr-4.jpg);
 }
 .rs-breadcrumbs.img5 {
-  background: url(assets/images/breadcrumbs/inr-5.jpg);
+  background: url(../images/breadcrumbs/inr-5.jpg);
 }
 /* ------------------------------------
 	07. Banner Section CSS
 ---------------------------------------*/
 .rs-banner.banner-main-home {
-  background-image: url(assets/images/banner/style1/banner-bg.jpg);
+  background-image: url(../images/banner/style1/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3113,7 +3113,7 @@ body .search-modal .close:hover {
   z-index: -11;
 }
 .rs-banner.banner-style2 .banner-imgae {
-  background: url(assets/images/banner/banner-4.jpg);
+  background: url(../images/banner/banner-4.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -3162,7 +3162,7 @@ body .search-modal .close:hover {
   color: #111111;
 }
 .rs-banner.banner-style3 {
-  background: url(assets/images/banner/style2/banner-bg.jpg);
+  background: url(../images/banner/style2/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3219,7 +3219,7 @@ body .search-modal .close:hover {
   background: #ffffff;
 }
 .rs-cleaning.cleaning-style1 .cheaning-img {
-  background-image: url(assets/images/project/details/2.jpg);
+  background-image: url(../images/project/details/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 315px 0px 315px 0px;
@@ -3242,7 +3242,7 @@ body .search-modal .close:hover {
   top: 47%;
 }
 .rs-choose.choose-style1 .about-choose-us .about-video {
-  background-image: url(assets/images/video/about-video.jpg);
+  background-image: url(../images/video/about-video.jpg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3301,7 +3301,7 @@ body .search-modal .close:hover {
   font-weight: 900;
 }
 .rs-choose.choose-style2 .video-img {
-  background-image: url(assets/images/video/video.jpg);
+  background-image: url(../images/video/video.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -3314,7 +3314,7 @@ body .search-modal .close:hover {
   transform: translate(-50%, -50%);
 }
 .rs-choose.choose-style3 .video-img {
-  background-image: url(assets/images/choose/style3/why-choose3.jpg);
+  background-image: url(../images/choose/style3/why-choose3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 266px 0px 267px 0px;
@@ -3413,7 +3413,7 @@ body .search-modal .close:hover {
 	10. Slider Section CSS
 ---------------------------------------*/
 .rs-slider.slide-home-style2 {
-  background: url(assets/images/slider/style1/banner-bg.jpg);
+  background: url(../images/slider/style1/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4445,7 +4445,7 @@ Video CSS
 	15. Process Section CSS
 ---------------------------------------*/
 .rs-process.process-style1 .all-process-item {
-  background-image: url(assets/images/process/style1/process-line.png);
+  background-image: url(../images/process/style1/process-line.png);
   background-size: contain;
   background-repeat: no-repeat;
   text-align: center;
@@ -4499,7 +4499,7 @@ Video CSS
   position: relative;
 }
 .rs-process.process-style1.process-about-style .all-process-item {
-  background-image: url(assets/images/process/style2/process-line.png);
+  background-image: url(../images/process/style2/process-line.png);
   background-position: 0 5px;
 }
 .rs-process.process-style1.process-about-style .all-process-item .process-item .icon-image img {
@@ -4546,7 +4546,7 @@ Video CSS
   text-align: center;
 }
 .rs-process.process-style2 .services-item .icon-image {
-  background-image: url(assets/images/process/style3/icon-bg.png);
+  background-image: url(../images/process/style3/icon-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4763,7 +4763,7 @@ Video CSS
   background: #1c6c28;
 }
 .project-information {
-  background-image: url(assets/images/bg/project-bg3.jpg);
+  background-image: url(../images/bg/project-bg3.jpg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5095,7 +5095,7 @@ Video CSS
   z-index: 11;
 }
 .rs-services.services-style3 .images-bg {
-  background-image: url(assets/images/clean/how-work.jpg);
+  background-image: url(../images/clean/how-work.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -5495,7 +5495,7 @@ Video CSS
   margin: -10px;
 }
 .rs-services-single .services-add {
-  background: url(assets/images/services/single/side-img.jpg);
+  background: url(../images/services/single/side-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5635,7 +5635,7 @@ Video CSS
   background: #cd201f;
 }
 .rs-services-single .call-us {
-  background: url(assets/images/choose/call-us.jpg);
+  background: url(../images/choose/call-us.jpg);
   background-repeat: no-repeat;
   padding: 110px 0px 110px 0px;
 }
@@ -6974,7 +6974,7 @@ Video CSS
 	25. Footer Section CSS
 ------------------------------------*/
 .rs-footer.footer-style1 {
-  background-image: url(assets/images/bg/footer-bg.jpg);
+  background-image: url(../images/bg/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -7126,7 +7126,7 @@ Video CSS
   color: #007cfb;
 }
 .rs-footer.footer-style1.footer-main-home {
-  background-image: url(assets/images/bg/footer-bg2.jpg);
+  background-image: url(../images/bg/footer-bg2.jpg);
   background-repeat: no-repeat;
 }
 .rs-footer.footer-style1.footer-style2 {
