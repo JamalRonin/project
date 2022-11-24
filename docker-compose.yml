@@ -1,0 +1,65 @@
+version: "3.8" #Engine docker compose 20.10.14 https://docs.docker.com/compose/compose-file/compose-versioning/#compatibility-matrix "Sur le tableau des matrice de compatibilité Engine 20.10.14 n'apparait pas. De ce fait j'ai pris la dernier version de docker-compose qui est la 3.8"
+services: # Les services sont nécessaires pour le fonctionnement de l'application
+
+    db: # Nom du service
+        image: mysql # Ici on utilise mysql
+        container_name: db_project #Nom du container (il doit être unique)
+        restart: always # Il redemarre quoi tout le temps
+        volumes:
+            - db-data:/var/lib/mysql # Ici le volume permet de persister les donnée
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=project
+            - MYSQL_USER=project
+            - MYSQL_PASSWORD=project
+        ports:
+            - 3306:3306
+        networks: 
+            - dev #le nom du reseau utiliser 
+
+
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin_project
+        restart: always
+        depends_on:
+            - db
+        ports:
+            - 8080:80
+        environment:
+            PMA_HOST: db
+        networks:
+            - dev
+
+
+    maildev:
+        image: maildev/maildev
+        container_name: maildev_project
+        command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
+        ports:
+            - "8081:80"
+        restart: always
+        networks:
+            - dev
+
+    www:
+        build: php #Ici on build le répertoire php
+        container_name: www_project
+        ports:
+            - "8741:80"
+        
+        volumes: 
+            - ./php/vhosts:/etc/apache2/sites-enabled # C'est le répostoire vhosts créer plus tot
+            - ./:/var/www
+        restart: always
+        networks:
+            - dev
+
+
+
+networks: # Descrption et nom de reseaux
+    dev:
+
+volumes:
+    db-data:
+    
