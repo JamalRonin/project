@@ -2,4 +2,7 @@
 
 {% block title %}Contact
 {% endblock %}
-{% block body %}{% endblock %}
+{% block body %}
+{% include "contact/breadcrumbs.html.twig" %}
+{% include "contact/contact.html.twig" %}
+{% endblock %}
