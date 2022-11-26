@@ -4,7 +4,7 @@
 			<div class="col-cell header-logo">
 				<div class="logo-area">
 					<a href="index.html">
-						<img class="sticky-logo" src="{{asset('/images/logo.png')}}" alt="logo">
+						<img class="sticky-logo" src="" alt="logo">
 					</a>
 				</div>
 			</div>
@@ -14,16 +14,16 @@
 						<nav class="rs-menu hidden-md">
 							<ul class="nav-menu">
 								<li class="menu-item-has-children current-menu-item">
-									<a href="index.html">Accueil</a>
+									<a href="{{path('app_home')}}">Accueil</a>
 								</li>
 								<li class="menu-item-has-children">
-								 <a href="about.html">A propos</a>
+								 <a href="{{path('app_about')}}">A propos</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="">Faq</a>
+											<a href="{{path('app_faq')}}">Faq</a>
 										</li>
 										<li>
-											<a href="">Devis</a>
+											<a href="{{path('app_devis')}}">Devis</a>
 										</li>
 										<li>
 											<a href="">Membres expert</a>
@@ -80,7 +80,7 @@
 									<a href="#">Blog</a>
 								</li>
 								<li>
-									<a href="contact.html">Contact</a>
+									<a href="{{path('app_contact')}}">Contact</a>
 								</li>
 							</ul>
 							<!-- //.nav-menu -->
