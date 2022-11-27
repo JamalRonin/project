@@ -15,4 +15,15 @@ class ServiceController extends AbstractController
     {
         return $this->render('service/index.html.twig');
     }
+
+// faire une route avec un slug 
+    /**
+     * @Route("/service/{slug}", name="app_service_show")
+     */
+    public function show($slug): Response
+    {
+        return $this->render('service/detail/show.html.twig', [
+            'slug' => $slug,
+        ]);
+    }
 }
