@@ -47,6 +47,12 @@ class TitleService
      */
     private $description;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Service::class, inversedBy="title")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $service;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -120,6 +126,18 @@ class TitleService
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getService(): ?Service
+    {
+        return $this->service;
+    }
+
+    public function setService(?Service $service): self
+    {
+        $this->service = $service;
 
         return $this;
     }

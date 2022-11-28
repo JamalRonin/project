@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ServiceRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -36,6 +38,16 @@ class Service
      * @ORM\Column(type="string", length=125)
      */
     private $slug;
+
+    /**
+     * @ORM\OneToMany(targetEntity=TitleService::class, mappedBy="service", orphanRemoval=true)
+     */
+    private $title;
+
+    public function __construct()
+    {
+        $this->title = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -86,6 +98,36 @@ class Service
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, TitleService>
+     */
+    public function getTitle(): Collection
+    {
+        return $this->title;
+    }
+
+    public function addTitle(TitleService $title): self
+    {
+        if (!$this->title->contains($title)) {
+            $this->title[] = $title;
+            $title->setService($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTitle(TitleService $title): self
+    {
+        if ($this->title->removeElement($title)) {
+            // set the owning side to null (unless already changed)
+            if ($title->getService() === $this) {
+                $title->setService(null);
+            }
+        }
 
         return $this;
     }
