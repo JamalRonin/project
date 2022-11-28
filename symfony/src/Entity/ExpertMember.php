@@ -42,6 +42,31 @@ class ExpertMember
      */
     private $slug;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $shortDesc;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $mail;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $telephone;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $biographie1;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $biographie2;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +128,66 @@ class ExpertMember
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getShortDesc(): ?string
+    {
+        return $this->shortDesc;
+    }
+
+    public function setShortDesc(string $shortDesc): self
+    {
+        $this->shortDesc = $shortDesc;
+
+        return $this;
+    }
+
+    public function getMail(): ?string
+    {
+        return $this->mail;
+    }
+
+    public function setMail(string $mail): self
+    {
+        $this->mail = $mail;
+
+        return $this;
+    }
+
+    public function getTelephone(): ?string
+    {
+        return $this->telephone;
+    }
+
+    public function setTelephone(string $telephone): self
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    public function getBiographie1(): ?string
+    {
+        return $this->biography1;
+    }
+
+    public function setBiographie1(string $biography1): self
+    {
+        $this->biography1 = $biography1;
+
+        return $this;
+    }
+
+    public function getBiographie2(): ?string
+    {
+        return $this->biographie2;
+    }
+
+    public function setBiographie2(string $biographie2): self
+    {
+        $this->biographie2 = $biographie2;
 
         return $this;
     }
