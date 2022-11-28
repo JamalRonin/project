@@ -17,7 +17,7 @@
 									<a href="{{path('app_home')}}">Accueil</a>
 								</li>
 								<li class="menu-item-has-children">
-								 <a href="{{path('app_about')}}">A propos</a>
+									<a href="{{path('app_about')}}">A propos</a>
 									<ul class="sub-menu">
 										<li>
 											<a href="{{path('app_faq')}}">Faq</a>
@@ -34,22 +34,22 @@
 									<a href="{{path('app_service')}}">Services</a>
 									<ul class="sub-menu">
 										<li>
-											<a href="">Milieu hospitalier</a>
+											<a href="{{path('app_service_show', {slug: 'milieu-hopitalier' })}}">Milieu hospitalier</a>
 										</li>
 										<li>
-											<a href="">Syndicat de copropriétaires</a>
+											<a href="{{path('app_service_show', {slug: 'syndicat-de-copropriete' })}}">Syndicat de copropriétaires</a>
 										</li>
 										<li>
-											<a href="">Milieu tertiaire</a>
+											<a href="{{path('app_service_show', {slug: 'interventions-en-milieu-tertiaire' })}}">Milieu tertiaire</a>
 										</li>
 										<li>
-											<a href="">Secteur industrielle</a>
+											<a href="{{path('app_service_show', {slug: 'interventions-industrielles' })}}">Secteur industrielle</a>
 										</li>
 										<li>
-											<a href="">Nettoyage de chantiers</a>
+											<a href="{{path('app_service_show', {slug: 'nettoyage-de-chantiers' })}}">Nettoyage de chantiers</a>
 										</li>
 										<li>
-											<a href="">Travaux exceptionnels</a>
+											<a href="{{path('app_service_show', {slug: 'travaux-exceptionnels' })}}">Travaux exceptionnels</a>
 										</li>
 									</ul>
 								</li>
@@ -110,3 +110,4 @@
 		</div>
 	</div>
 </div>
+

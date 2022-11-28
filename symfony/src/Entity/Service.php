@@ -59,6 +59,21 @@ class Service
      */
     private $accueilDesc;
 
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $img;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $icone;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $alt;
+
     public function __construct()
     {
         $this->title = new ArrayCollection();
@@ -217,6 +232,42 @@ class Service
     public function setAccueilDesc(string $accueilDesc): self
     {
         $this->accueilDesc = $accueilDesc;
+
+        return $this;
+    }
+
+    public function getImg(): ?string
+    {
+        return $this->img;
+    }
+
+    public function setImg(string $img): self
+    {
+        $this->img = $img;
+
+        return $this;
+    }
+
+    public function getIcone(): ?string
+    {
+        return $this->icone;
+    }
+
+    public function setIcone(?string $icone): self
+    {
+        $this->icone = $icone;
+
+        return $this;
+    }
+
+    public function getAlt(): ?string
+    {
+        return $this->alt;
+    }
+
+    public function setAlt(?string $alt): self
+    {
+        $this->alt = $alt;
 
         return $this;
     }

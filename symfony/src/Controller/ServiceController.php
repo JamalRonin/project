@@ -32,7 +32,7 @@ class ServiceController extends AbstractController
         $title =    $service->getTitle()->getValues();
         $about =    $service->getAbout()->getValues();
         $chooseUs = $service->getChooseUs()->getValues();
-        dump($chooseUs);
+        dump($title);
         return $this->render('service/detail/show.html.twig', [
             'slug' => $slug,
             'service' => $service,
