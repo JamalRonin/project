@@ -67,6 +67,11 @@ class ExpertMember
      */
     private $biographie2;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $designationInfo;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -188,6 +193,18 @@ class ExpertMember
     public function setBiographie2(string $biographie2): self
     {
         $this->biographie2 = $biographie2;
+
+        return $this;
+    }
+
+    public function getDesignationInfo(): ?string
+    {
+        return $this->designationInfo;
+    }
+
+    public function setDesignationInfo(string $designationInfo): self
+    {
+        $this->designationInfo = $designationInfo;
 
         return $this;
     }
