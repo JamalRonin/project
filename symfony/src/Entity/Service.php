@@ -49,10 +49,16 @@ class Service
      */
     private $about;
 
+    /**
+     * @ORM\OneToMany(targetEntity=ChooseUseService::class, mappedBy="service")
+     */
+    private $chooseUs;
+
     public function __construct()
     {
         $this->title = new ArrayCollection();
         $this->about = new ArrayCollection();
+        $this->chooseUs = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -162,6 +168,36 @@ class Service
             // set the owning side to null (unless already changed)
             if ($about->getService() === $this) {
                 $about->setService(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, ChooseUseService>
+     */
+    public function getChooseUs(): Collection
+    {
+        return $this->chooseUs;
+    }
+
+    public function addChooseUs(ChooseUseService $chooseUs): self
+    {
+        if (!$this->chooseUs->contains($chooseUs)) {
+            $this->chooseUs[] = $chooseUs;
+            $chooseUs->setService($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChooseUs(ChooseUseService $chooseUs): self
+    {
+        if ($this->chooseUs->removeElement($chooseUs)) {
+            // set the owning side to null (unless already changed)
+            if ($chooseUs->getService() === $this) {
+                $chooseUs->setService(null);
             }
         }
 
