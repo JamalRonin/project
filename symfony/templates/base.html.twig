@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<!-- meta tag -->
-        <meta charset="UTF-8">
-        <title>{% block title %}Accueil{% endblock %}</title>
-        <meta name="description" content="">
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Accueil
+			{% endblock %}
+		</title>
+		<meta
+		name="description" content="">
 		<!-- responsive tag -->
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="shortcut icon" type="image/x-icon" href="{{asset('/images/fav.png')}}">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {# {{ encore_entry_link_tags('app') }} #}
-            <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+		<link
+		rel="shortcut icon" type="image/x-icon" href="{{asset('/images/fav.png')}}">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			{# {{ encore_entry_link_tags('app') }} #}
+			<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 			<link rel="stylesheet" href="{{ asset('css/uicons-regular-rounded.css') }}">
 			<link rel="stylesheet" href="{{ asset('fonts/flaticon.css') }}">
 			<link rel="stylesheet" href="{{ asset('css/animate.css') }}">
@@ -24,28 +30,31 @@
 			<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
 			<link rel="stylesheet" href="{{ asset('css/rsmenu-main.css') }}">
 			<link rel="stylesheet" href="{{ asset('css/rs-spacing.css') }}">
-			<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+			<link
+			rel="stylesheet" href="{{ asset('css/style.css') }}">
 			<!-- Template Main CSS File -->
 			<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-        {% endblock %}
+		{% endblock %}
 	</head>
 
-    <body class="home-primary-color">
-	<div class="offwrap"></div>
-	{% include "partials/preloader.html.twig" %}
+	<body class="home-primary-color">
+		<div class="offwrap"></div>
+		{% include "partials/preloader.html.twig" %}
 		<!-- Main content Start -->
 		<div class="main-content">
-		{% include "partials/header.html.twig" %}
-        {% block body %}{% endblock %}
-		</div> 
+			{% include "partials/header.html.twig" %}
+			{% block body %}{% endblock %}
+			<!-- Partner Start -->
+			{% include "partials/partner.html.twig" %}
+			<!-- Partner End -->
+		</div>
 		<!-- Main content End -->
 		{% include "partials/footer.html.twig" %}
 		{% include "partials/scrollup.html.twig" %}
 		{% include "partials/search.html.twig" %}
 		{% block javascripts %}
-            {# {{ encore_entry_script_tags('app') }} #}
-			<!-- modernizr js -->
-            <script src="{{ asset('js/modernizr-2.8.3.min.js')}}"></script>
+			{# {{ encore_entry_script_tags('app') }} #}
+			<!-- modernizr js --><script src="{{ asset('js/modernizr-2.8.3.min.js')}}"> </script>
 			<!-- jquery latest version -->
 			<script src="{{ asset('js/jquery.min.js')}}"></script>
 			<!-- Bootstrap v4.4.1 js -->
@@ -71,6 +80,7 @@
 			<script src="{{ asset('js/contact.form.js')}}"></script>
 			<!-- main js -->
 			<script src="{{ asset('js/main.js')}}"></script>
-        {% endblock %}
-    </body>
+		{% endblock %}
+	</body>
 </html>
+
