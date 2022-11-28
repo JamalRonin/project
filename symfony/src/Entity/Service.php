@@ -44,9 +44,15 @@ class Service
      */
     private $title;
 
+    /**
+     * @ORM\OneToMany(targetEntity=AboutService::class, mappedBy="service")
+     */
+    private $about;
+
     public function __construct()
     {
         $this->title = new ArrayCollection();
+        $this->about = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -126,6 +132,36 @@ class Service
             // set the owning side to null (unless already changed)
             if ($title->getService() === $this) {
                 $title->setService(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, AboutService>
+     */
+    public function getAbout(): Collection
+    {
+        return $this->about;
+    }
+
+    public function addAbout(AboutService $about): self
+    {
+        if (!$this->about->contains($about)) {
+            $this->about[] = $about;
+            $about->setService($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAbout(AboutService $about): self
+    {
+        if ($this->about->removeElement($about)) {
+            // set the owning side to null (unless already changed)
+            if ($about->getService() === $this) {
+                $about->setService(null);
             }
         }
 
