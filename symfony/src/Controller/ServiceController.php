@@ -30,8 +30,6 @@ class ServiceController extends AbstractController
 
         $service = $serviceRepository->findOneBy(['slug' => $slug]);
         $title =    $service->getTitle()->getValues();
-        dump($title);
-        dump($service);
         return $this->render('service/detail/show.html.twig', [
             'slug' => $slug,
             'service' => $service,
