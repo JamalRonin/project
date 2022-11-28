@@ -175,12 +175,12 @@ class ExpertMember
 
     public function getBiographie1(): ?string
     {
-        return $this->biography1;
+        return $this->biographie1;
     }
 
-    public function setBiographie1(string $biography1): self
+    public function setBiographie1(string $biographie1): self
     {
-        $this->biography1 = $biography1;
+        $this->biographie1 = $biographie1;
 
         return $this;
     }

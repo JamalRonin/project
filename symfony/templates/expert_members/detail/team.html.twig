@@ -2,46 +2,45 @@
 <div class="rs-team-single pt-120 pb-100 md-pt-80 md-pb-60">
     <div class="container">
         <div class="btm-info-team">
-            <div class="row align-items-center">
-                <div class="col-lg-5 md-mb-50">
-                    <div class="images-part">
-                        <img src="{{asset('/images/team/1.jpg')}}" alt="images">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="con-info">
-                        <span class="designation-info">House Cleaner</span>
-                        <h2 class="title">John Mizuk</h2>
-                        <div class="short-desc">
-                            Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive                             
-                        </div>
-                        <div class="ps-informations">
-                            <ul class="personal-info">
-                                <li>
-                                    <span><i class="flaticon-email"></i></span>
-                                    <a href="mailto:aliha@Devsdesign.com">aliha@Devsdesign.com</a>
-                                </li>
-                                <li>
-                                    <span><i class="flaticon-call"></i></span> (123) - 222
-                                    -1452 
-                                </li>
-                            </ul>
-                            <ul class="social-info">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>                       
+                <div class="row align-items-center">
+                    <div class="col-lg-5 md-mb-50">
+                        <div class="images-part">
+                            <img src="{{asset('/images/team/' ~ expertMember.img ~ '')}}" alt="{{expertMember.alt}}">
                         </div>
                     </div>
+                    <div class="col-lg-7">
+                        <div class="con-info">
+                            <span class="designation-info">{{expertMember.designationInfo}}</span>
+                            <h2 class="title">{{expertMember.fullname}}</h2>
+                            <div class="short-desc">
+                                {{expertMember.shortDesc}}                             
+                            </div>
+                            <div class="ps-informations">
+                                <ul class="personal-info">
+                                    <li>
+                                        <span><i class="flaticon-email"></i></span>
+                                        <a href="mailto:aliha@Devsdesign.com">{{expertMember.mail}}</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-call"></i></span> {{expertMember.telephone}}
+                                    </li>
+                                </ul>
+                                <ul class="social-info">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>                       
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
         <div class="row">
             <div class="col-lg-7 pr-55 md-pr-15">
                 <div class="project-con">
-                    <h3>Biography</h3>
-                    <p class="margin-0 pb-25">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that Taking seamless key performance indicators offline to maximise the long tail.</p>
-                    <p class="margin-0">Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence .</p>
+                    <h3>Biographie</h3>
+                    <p class="margin-0 pb-25">{{expertMember.biographie1}}</p>
+                    <p class="margin-0">{{expertMember.biographie2}}</p>
                 </div>
             </div>
             <div class="col-lg-5 md-mt-55">
