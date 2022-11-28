@@ -54,6 +54,11 @@ class Service
      */
     private $chooseUs;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $accueilDesc;
+
     public function __construct()
     {
         $this->title = new ArrayCollection();
@@ -200,6 +205,18 @@ class Service
                 $chooseUs->setService(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getAccueilDesc(): ?string
+    {
+        return $this->accueilDesc;
+    }
+
+    public function setAccueilDesc(string $accueilDesc): self
+    {
+        $this->accueilDesc = $accueilDesc;
 
         return $this;
     }
