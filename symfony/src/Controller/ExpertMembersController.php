@@ -17,4 +17,15 @@ class ExpertMembersController extends AbstractController
             'controller_name' => 'ExpertMembersController',
         ]);
     }
+
+    // route avec slug 
+    /**
+     * @Route("/expert-members/{slug}", name="app_member_show")
+     */
+    public function show($slug): Response
+    {
+        return $this->render('expert_members/detail/show.html.twig', [
+            'slug' => $slug,
+        ]);
+    }
 }
