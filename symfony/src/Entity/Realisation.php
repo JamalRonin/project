@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\RealisationRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -46,6 +48,16 @@ class Realisation
      * @ORM\Column(type="text")
      */
     private $description;
+
+    /**
+     * @ORM\OneToMany(targetEntity=SliderRealisation::class, mappedBy="realisation")
+     */
+    private $slider;
+
+    public function __construct()
+    {
+        $this->slider = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -120,6 +132,36 @@ class Realisation
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, SliderRealisation>
+     */
+    public function getSlider(): Collection
+    {
+        return $this->slider;
+    }
+
+    public function addSlider(SliderRealisation $slider): self
+    {
+        if (!$this->slider->contains($slider)) {
+            $this->slider[] = $slider;
+            $slider->setRealisation($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSlider(SliderRealisation $slider): self
+    {
+        if ($this->slider->removeElement($slider)) {
+            // set the owning side to null (unless already changed)
+            if ($slider->getRealisation() === $this) {
+                $slider->setRealisation(null);
+            }
+        }
 
         return $this;
     }

@@ -27,8 +27,10 @@ class ProjectController extends AbstractController
     public function show(RealisationRepository $realisationRepository, string $slug): Response
     {
         $realisation = $realisationRepository->findOneBy(['slug' => $slug]);
+        $sliders = $realisation->getSlider()->getValues();
         return $this->render('project/detail/show.html.twig', [
             'realisation' => $realisation,
+            'sliders' => $sliders,
         ]);
     }
 }
