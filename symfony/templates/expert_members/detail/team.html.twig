@@ -44,28 +44,18 @@
                 </div>
             </div>
             <div class="col-lg-5 md-mt-55">
-                <h3 class="margin-0 pb-25">Professional Skills</h3>
+                <h3 class="margin-0 pb-25">Compétences</h3>
                     <!-- Skillbar Section Start -->
                 <div class="rs-skillbar skillbar-style1">
                     <div class="cl-skill-bar">
                         <!-- Start Skill Bar -->
-                        <span class="skillbar-title">Repairs</span>
-                        <div class="skillbar" data-percent="95">
+                        {% for skill in skills %}
+                        <span class="skillbar-title">{{skill.title}}</span>
+                        <div class="skillbar" data-percent="{{skill.percent}}">
                             <p class="skillbar-bar"></p>
                             <span class="skill-bar-percent"></span> 
-                        </div>
-                        <!-- Start Skill Bar -->
-                        <span class="skillbar-title">Сleaning</span>
-                        <div class="skillbar" data-percent="90">
-                            <p class="skillbar-bar"></p>
-                            <span class="skill-bar-percent"></span> 
-                        </div>
-                        <!-- Start Skill Bar -->
-                        <span class="skillbar-title">Organization</span>
-                        <div class="skillbar" data-percent="85">
-                            <p class="skillbar-bar"></p>
-                            <span class="skill-bar-percent"></span> 
-                        </div>  
+                        </div>                            
+                        {% endfor %}
                     </div>
                 </div>
                 <!-- Skillbar Section End -->

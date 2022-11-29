@@ -28,10 +28,12 @@ class ExpertMembersController extends AbstractController
     public function show($slug, ExpertMemberRepository $expertMemberRepository): Response
     {
         $expertMember = $expertMemberRepository->findOneBySlug($slug);
-        dump($expertMember);
+        $skills = $expertMember->getSkills()->getValues();
+        dump($skills);
         return $this->render('expert_members/detail/show.html.twig', [
             'slug' => $slug,
             'expertMember' => $expertMember,
+            'skills' => $skills,
         ]);
     }
 }
