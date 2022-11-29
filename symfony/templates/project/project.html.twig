@@ -10,10 +10,10 @@
 					</div>
 					<div class="project-content"> 
 						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">{{realisation.title}}</a></h3>
+							<h3 class="title"><a href="{{path('app_project_show', {slug: realisation.slug })}}">{{realisation.title}}</a></h3>
 							<span class="category">{{realisation.information}}</span>
 						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
+						<a class="p-icon" href="{{path('app_project_show', {slug: realisation.slug })}}"><i class="fa fi fi-rr-plus"></i></a>
 					</div>
 				</div>
 			</div>				
