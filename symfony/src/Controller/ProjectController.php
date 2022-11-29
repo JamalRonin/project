@@ -19,4 +19,16 @@ class ProjectController extends AbstractController
             'realisations' => $realisations,
         ]);
     }
+
+    //slug is the name of the route parameter
+    /**
+     * @Route("/project/{slug}", name="app_project_show")
+     */
+    public function show(RealisationRepository $realisationRepository, string $slug): Response
+    {
+        $realisation = $realisationRepository->findOneBy(['slug' => $slug]);
+        return $this->render('project/detail/show.html.twig', [
+            'realisation' => $realisation,
+        ]);
+    }
 }
