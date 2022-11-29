@@ -59,10 +59,16 @@ class Realisation
      */
     private $detail;
 
+    /**
+     * @ORM\OneToMany(targetEntity=ChecklistRealisation::class, mappedBy="realisation")
+     */
+    private $checklist;
+
     public function __construct()
     {
         $this->slider = new ArrayCollection();
         $this->detail = new ArrayCollection();
+        $this->checklist = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -196,6 +202,36 @@ class Realisation
             // set the owning side to null (unless already changed)
             if ($detail->getRealisation() === $this) {
                 $detail->setRealisation(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, ChecklistRealisation>
+     */
+    public function getChecklist(): Collection
+    {
+        return $this->checklist;
+    }
+
+    public function addChecklist(ChecklistRealisation $checklist): self
+    {
+        if (!$this->checklist->contains($checklist)) {
+            $this->checklist[] = $checklist;
+            $checklist->setRealisation($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChecklist(ChecklistRealisation $checklist): self
+    {
+        if ($this->checklist->removeElement($checklist)) {
+            // set the owning side to null (unless already changed)
+            if ($checklist->getRealisation() === $this) {
+                $checklist->setRealisation(null);
             }
         }
 
