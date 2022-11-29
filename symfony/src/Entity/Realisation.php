@@ -37,6 +37,11 @@ class Realisation
      */
     private $information;
 
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $alt;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +91,18 @@ class Realisation
     public function setInformation(string $information): self
     {
         $this->information = $information;
+
+        return $this;
+    }
+
+    public function getAlt(): ?string
+    {
+        return $this->alt;
+    }
+
+    public function setAlt(?string $alt): self
+    {
+        $this->alt = $alt;
 
         return $this;
     }
