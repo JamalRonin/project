@@ -54,9 +54,15 @@ class Realisation
      */
     private $slider;
 
+    /**
+     * @ORM\OneToMany(targetEntity=RealisationDetail::class, mappedBy="realisation")
+     */
+    private $detail;
+
     public function __construct()
     {
         $this->slider = new ArrayCollection();
+        $this->detail = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -160,6 +166,36 @@ class Realisation
             // set the owning side to null (unless already changed)
             if ($slider->getRealisation() === $this) {
                 $slider->setRealisation(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, RealisationDetail>
+     */
+    public function getDetail(): Collection
+    {
+        return $this->detail;
+    }
+
+    public function addDetail(RealisationDetail $detail): self
+    {
+        if (!$this->detail->contains($detail)) {
+            $this->detail[] = $detail;
+            $detail->setRealisation($this);
+        }
+
+        return $this;
+    }
+
+    public function removeDetail(RealisationDetail $detail): self
+    {
+        if ($this->detail->removeElement($detail)) {
+            // set the owning side to null (unless already changed)
+            if ($detail->getRealisation() === $this) {
+                $detail->setRealisation(null);
             }
         }
 

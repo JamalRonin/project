@@ -28,9 +28,11 @@ class ProjectController extends AbstractController
     {
         $realisation = $realisationRepository->findOneBy(['slug' => $slug]);
         $sliders = $realisation->getSlider()->getValues();
+        $detail = $realisation->getDetail()->getValues();
         return $this->render('project/detail/show.html.twig', [
             'realisation' => $realisation,
             'sliders' => $sliders,
+            'detail' => $detail,
         ]);
     }
 }
