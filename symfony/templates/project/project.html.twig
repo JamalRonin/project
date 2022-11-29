@@ -2,66 +2,11 @@
 <div class="rs-project project-style1 project-style3 pt-120 pb-120 md-pt-80 md-pb-80">
 	<div class="container">
 		<div class="row">
+			{% for i in 0..5 %}
 			<div class="col-lg-4 col-md-6 mb-30">
 				<div class="project-item">
 					<div class="project-img">
-						<img src="assets/images/project/style1/1.jpg" alt="images">
-					</div>
-					<div class="project-content"> 
-						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">Dust Surfaces</a></h3>
-							<span class="category">Frankfort, USA</span>
-						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-30">
-				<div class="project-item">
-					<div class="project-img">
-						<img src="assets/images/project/style1/2.jpg" alt="images">
-					</div>
-					<div class="project-content"> 
-						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">Vacuum Carpets</a></h3>
-							<span class="category">New York, USA</span>
-						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mb-30">
-				<div class="project-item">
-					<div class="project-img">
-						<img src="assets/images/project/style1/3.jpg" alt="images">
-					</div>
-					<div class="project-content"> 
-						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">Outdoor Cleaning</a></h3>
-							<span class="category">Los Angeles, USA</span>
-						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 md-mb-30">
-				<div class="project-item">
-					<div class="project-img">
-						<img src="assets/images/project/style1/4.jpg" alt="images">
-					</div>
-					<div class="project-content"> 
-						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">Commercial cleaner</a></h3>
-							<span class="category">Chicago, USA</span>
-						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 sm-mb-30">
-				<div class="project-item">
-					<div class="project-img">
-						<img src="assets/images/project/style1/5.jpg" alt="images">
+						<img src="{{asset('/images/project/style1/5.jpg')}}" alt="images">
 					</div>
 					<div class="project-content"> 
 						<div class="project-inner">
@@ -71,21 +16,8 @@
 						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="project-item">
-					<div class="project-img">
-						<img src="assets/images/project/style1/6.jpg" alt="images">
-					</div>
-					<div class="project-content"> 
-						<div class="project-inner">
-							<h3 class="title"><a href="projects-details.html">Equipment cleaner</a></h3>
-							<span class="category">San Diego, USA</span>
-						</div>
-						<a class="p-icon" href="projects-details.html"><i class="fa fi fi-rr-plus"></i></a>
-					</div>
-				</div>
-			</div>
+			</div>				
+			{% endfor %}
 		</div>
 	</div>
 </div>
