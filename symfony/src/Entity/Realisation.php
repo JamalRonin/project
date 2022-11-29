@@ -64,11 +64,17 @@ class Realisation
      */
     private $checklist;
 
+    /**
+     * @ORM\OneToMany(targetEntity=CleaningGuide::class, mappedBy="realisation")
+     */
+    private $cleaning_guide;
+
     public function __construct()
     {
         $this->slider = new ArrayCollection();
         $this->detail = new ArrayCollection();
         $this->checklist = new ArrayCollection();
+        $this->cleaning_guide = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -232,6 +238,36 @@ class Realisation
             // set the owning side to null (unless already changed)
             if ($checklist->getRealisation() === $this) {
                 $checklist->setRealisation(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, CleaningGuide>
+     */
+    public function getCleaningGuide(): Collection
+    {
+        return $this->cleaning_guide;
+    }
+
+    public function addCleaningGuide(CleaningGuide $cleaningGuide): self
+    {
+        if (!$this->cleaning_guide->contains($cleaningGuide)) {
+            $this->cleaning_guide[] = $cleaningGuide;
+            $cleaningGuide->setRealisation($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCleaningGuide(CleaningGuide $cleaningGuide): self
+    {
+        if ($this->cleaning_guide->removeElement($cleaningGuide)) {
+            // set the owning side to null (unless already changed)
+            if ($cleaningGuide->getRealisation() === $this) {
+                $cleaningGuide->setRealisation(null);
             }
         }
 
