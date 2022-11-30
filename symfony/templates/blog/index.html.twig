@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+<!-- Breadcrumbs Start -->
+{% include "blog/breadcrumbs.html.twig" %}
+<!-- Breadcrumbs End -->
+
+<!-- Blog Section Start -->
+<div class="rs-inner-blog pt-120 pb-120 md-pt-80 md-pb-80">
+	<div class="container">
+		<div class="row">
+			{% include "blog/blogItem.html.twig"  %}
+			{% include "blog/widgetArea.html.twig" %}
+		</div> 
+	</div>
+</div>
+<!-- Blog Section End --> 
+{% endblock %}
