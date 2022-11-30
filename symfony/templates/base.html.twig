@@ -42,7 +42,7 @@
 		{% include "partials/preloader.html.twig" %}
 		<!-- Main content Start -->
 		<div class="main-content">
-			{% include "partials/header.html.twig" %}
+			{% include "partials/header.html.twig" with {'realisations' : realisations , 'services' : services } %}
 			{% block body %}{% endblock %}
 			{% block partner %}			
 			<!-- Partner Start -->

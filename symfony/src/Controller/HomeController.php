@@ -16,50 +16,62 @@ class HomeController extends AbstractController
     public function index(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
         $services = $serviceRepository->findAll();
-        $realisation = $realisationRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         return $this->render('home/index.html.twig', [
             'services' => $services,
-            'realisations' => $realisation,
+            'realisations' => $realisations,
         ]);
     }
 
     /**
      * @Route("/apropos", name="app_about")
      */
-    public function about(): Response
+    public function about(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         return $this->render('apropos/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'services' => $services,
+            'realisations' => $realisations,
         ]);
     }
 
     /**
      * @Route("/contact", name="app_contact")
      */
-    public function contact(): Response
+    public function contact(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         return $this->render('contact/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'services' => $services,
+            'realisations' => $realisations,
         ]);
     }
 
     /**
      * @Route("/faq", name="app_faq")
      */
-    public function faq(): Response
+    public function faq(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         return $this->render('faq/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'services' => $services,
+            'realisations' => $realisations,
         ]);
     }
 
     /**
      * @Route("/devis", name="app_devis")
      */
-    public function devis(): Response
+    public function devis(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         return $this->render('devis/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'services' => $services,
+            'realisations' => $realisations,
         ]);
     }
 }

@@ -33,30 +33,22 @@
 								<li class="menu-item-has-children">
 									<a href="{{path('app_service')}}">Services</a>
 									<ul class="sub-menu">
-										<li>
-											<a href="{{path('app_service_show', {slug: 'milieu-hopitalier' })}}">Milieu hospitalier</a>
-										</li>
-										<li>
-											<a href="{{path('app_service_show', {slug: 'syndicat-de-copropriete' })}}">Syndicat de copropriétaires</a>
-										</li>
-										<li>
-											<a href="{{path('app_service_show', {slug: 'interventions-en-milieu-tertiaire' })}}">Milieu tertiaire</a>
-										</li>
-										<li>
-											<a href="{{path('app_service_show', {slug: 'interventions-industrielles' })}}">Secteur industrielle</a>
-										</li>
-										<li>
-											<a href="{{path('app_service_show', {slug: 'nettoyage-de-chantiers' })}}">Nettoyage de chantiers</a>
-										</li>
-										<li>
-											<a href="{{path('app_service_show', {slug: 'travaux-exceptionnels' })}}">Travaux exceptionnels</a>
-										</li>
+									{% for service in services %}
+											<li>
+												<a href="{{path('app_service_show', {slug: service.slug })}}">{{service.denomination}}</a>
+											</li>
+									{% endfor %}
 									</ul>
 								</li>
 								<li class="menu-item-has-children">
 									<a href="{{path('app_project')}}">Nos réalisations</a>
 									<ul class="sub-menu">
-										<li>
+										{% for realisation in realisations %}
+											<li>
+												<a href="{{path('app_project_show', {slug: realisation.slug })}}">{{realisation.title}}</a>
+											</li>
+										{% endfor %}
+										{# <li>
 											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">interventions en milieu hospitalier</a>
 										</li>
 										<li>
@@ -73,7 +65,7 @@
 										</li>
 										<li>
 											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">Les demandes urgente</a>
-										</li>
+										</li> #}
 									</ul>
 								</li>
 								<li class="menu-item-has-children">

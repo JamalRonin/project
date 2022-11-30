@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Repository\RealisationDetailRepository;
+use App\Repository\RealisationRepository;
 use App\Repository\ServiceRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,12 +14,14 @@ class ServiceController extends AbstractController
     /**
      * @Route("/service", name="app_service")
      */
-    public function index(ServiceRepository $serviceRepository): Response
+    public function index(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
         $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
 
         return $this->render('service/index.html.twig', [
             'services' => $services,
+            'realisations' => $realisations,
         ]);
     }
 
@@ -25,13 +29,15 @@ class ServiceController extends AbstractController
     /**
      * @Route("/service/{slug}", name="app_service_show")
      */
-    public function show($slug,ServiceRepository $serviceRepository): Response
+    public function show($slug,ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
 
         $service = $serviceRepository->findOneBy(['slug' => $slug]);
         $title =    $service->getTitle()->getValues();
         $about =    $service->getAbout()->getValues();
         $chooseUs = $service->getChooseUs()->getValues();
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
         dump($title);
         return $this->render('service/detail/show.html.twig', [
             'slug' => $slug,
@@ -39,6 +45,8 @@ class ServiceController extends AbstractController
             'title' => $title,
             'about' => $about,
             'chooseUs' => $chooseUs,
+            'services' => $services,
+            'realisations' => $realisations,
 
         ]);
     }
