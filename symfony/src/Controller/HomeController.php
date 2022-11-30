@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\RealisationRepository;
 use App\Repository\ServiceRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,12 +13,13 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="app_home")
      */
-    public function index(ServiceRepository $serviceRepository): Response
+    public function index(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
     {
         $services = $serviceRepository->findAll();
+        $realisation = $realisationRepository->findAll();
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
             'services' => $services,
+            'realisations' => $realisation,
         ]);
     }
 

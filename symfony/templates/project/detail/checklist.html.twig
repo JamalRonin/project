@@ -1,37 +1,39 @@
 <!-- Checklist Section Start -->
+{% for check in checklist %}
 <div class="rs-checklist gray-bg pt-120 pb-120 md-pt-80 md-pb-80">
 	<div class="container">
 		<div class="row y-middle">
 			<div class="col-lg-6 pr-46 md-pr-15 md-mb-50">
 				<div class="sec-title2">
 					<div class="brush-content mb-8">
-						<img src="assets/images/brush.png" alt="">
+						<img src="{{asset('/images/brush.png')}}" alt="">
 						<span class="sub-text small-text">Checklist</span>
 					</div>
 					<h2 class="title title2 pb-22">
-						House Cleaning Checklist
+						{{ check.title }}
 					</h2>
 					<div class="desc pb-22">
-						European languages are members of the same family. The languages only differ in their grammar, their pronu nciation and their most common words. sometimes by accident, sometimes on purpose. European languages are members of the same family
+						{{check.description}}
 					</div>
 					<ul class="brush-list style2">
-						<li>Digital  how will activities impact traditional</li>
-						<li>All these digital elements and projects aim</li>
-						<li>I monitor my staff with software that takes</li>
-						<li>Laoreet dolore magna sodium glutimate</li>
-						<li>Veniam Minim quis niacin sodium</li>
+						<li>{{check.li1}}</li>
+						<li>{{check.li2}}</li>
+						<li>{{check.li3}}</li>
+						<li>{{check.li4}}</li>
+						<li>{{check.li5}}</li>
 					</ul>
 					<div class="desc pt-22">
-						Pronunciation and more common words. If several languages coalesce.  over the years, sometimes by accident, sometimes on purpose. Over the years, sometimes by  purpose.
+						{{check.information}}
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-6 text-right md-text-center">
 				<div class="checklist-img">
-					<img src="assets/images/project/details/1.png" alt="">
+					<img src="{{asset('/images/project/details/' ~ check.img ~ '')}}" alt="{{check.alt}}">
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+{% endfor %}
 <!-- Checklist Section End -->

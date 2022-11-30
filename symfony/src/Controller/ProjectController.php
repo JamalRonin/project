@@ -30,11 +30,18 @@ class ProjectController extends AbstractController
         $sliders = $realisation->getSlider()->getValues();
         $detail = $realisation->getDetail()->getValues();
         $checklist = $realisation->getChecklist()->getValues();
+        $cleaningGuide = $realisation->getCleaningGuide()->getValues();
+        dump($sliders);
+        dump($detail);
+        dump($checklist);
+        dump($cleaningGuide);
         return $this->render('project/detail/show.html.twig', [
             'realisation' => $realisation,
             'sliders' => $sliders,
             'detail' => $detail,
             'checklist' => $checklist,
+            'cleaningGuide' => $cleaningGuide,
+
         ]);
     }
 }

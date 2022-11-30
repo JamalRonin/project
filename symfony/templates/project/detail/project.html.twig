@@ -1,18 +1,19 @@
 <!-- Project Details Section Start -->
+{% for info in detail %}
 <div class="rs-project-details pt-120 pb-120 md-pt-80 md-pb-80">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 md-mb-50">
 				<div class="sec-title2 mb-40">
 					<div class="brush-content mb-8">
-						<img src="assets/images/brush.png" alt="">
+						<img src="{{asset('/images/brush.png')}}" alt="">
 						<span class="sub-text small-text">Détail du projet</span>
 					</div>
 					<h2 class="title title2 pb-22">
-						Intro of Dust Surfaces
+						{{info.title}}
 					</h2>
 					<div class="desc">
-						European languages are members of the same family. The languages only differ in their grammar, their pronu nciation and their most common words. pronunciation and more common words. If several languages coalesce.  over the years, sometimes by accident, sometimes on purpose. Over the years, sometimes by accident, sometimes on purpose. European languages are members of the same family. The languages only differ in their grammar, their pronu nciation and their most common words. pronunciation and more common words. If several languages coalesce.  
+						{{info.description}}
 					</div>
 				</div>
 				<!-- Counter Section Start -->
@@ -23,7 +24,7 @@
 								<div class="rs-counter-list">
 									<div class="counter-text">
 										<div class="counter-icon">
-											<img src="assets/images/counter/icons/1.png" alt="Icons">
+											<img src="{{asset('/images/counter/icons/1.png')}}" alt="Icons">
 										</div>
 										<div class="counter-number">
 											<span class="rs-count">1500</span>
@@ -37,7 +38,7 @@
 								<div class="rs-counter-list">
 									<div class="counter-text">
 										<div class="counter-icon">
-											<img src="assets/images/counter/icons/2.png" alt="Icons">
+											<img src="{{asset('/images/counter/icons/2.png')}}" alt="Icons">
 										</div>
 										<div class="counter-number">
 											<span class="rs-count">2070</span>
@@ -51,7 +52,7 @@
 								<div class="rs-counter-list">
 									<div class="counter-text">
 										<div class="counter-icon">
-											<img src="assets/images/counter/icons/3.png" alt="Icons">
+											<img src="{{asset('/images/counter/icons/3.png')}}" alt="Icons">
 										</div>
 										<div class="counter-number">
 											<span class="rs-count">6080</span>
@@ -64,13 +65,13 @@
 						</div>
 						<div class="counter-animation">
 							<div class="animate-ball one">
-								<img src="assets/images/ball.png" alt="Images">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
 							</div>
 							<div class="animate-ball two">
-								<img src="assets/images/ball.png" alt="Images">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
 							</div>
 							<div class="animate-ball three">
-								<img src="assets/images/ball.png" alt="Images">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
 							</div>
 						</div>
 					</div>
@@ -85,31 +86,31 @@
 					<div class="project-content mb-22">
 						<h4 class="title">Skills</h4>
 						<div class="description">
-							Buffing, Mopping, Dusting            		
+							{{info.skills}}            		
 						</div>
 					</div>
 					<div class="project-content mb-22">
 						<h4 class="title">Client</h4>
 						<div class="description">
-							John Dibag           		
+							{{info.client}}           		
 						</div>
 					</div>
 					<div class="project-content mb-22">
-						<h4 class="title">Completed Date</h4>
+						<h4 class="title">Date de fin</h4>
 						<div class="description">
-							20 - 04 - 2021           		
+							{{info.finDeRealisation}}          		
 						</div>
 					</div>
 					<div class="project-content mb-22">
 						<h4 class="title">Manager</h4>
 						<div class="description">
-							Marvelon Mizuk           		
+							{{info.manager}}           		
 						</div>
 					</div>
 					<div class="project-content">
 						<h4 class="title">Location</h4>
 						<div class="description">
-							New York, NY, USA           		
+							{{info.adresse}}           		
 						</div>
 					</div>
 				</div>
@@ -117,4 +118,5 @@
 		</div>
 	</div>
 </div>
+{% endfor %}
 <!-- Project Details Section End -->
