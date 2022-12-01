@@ -49,11 +49,27 @@ class Article
      */
     private $articleTags;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $intro;
+
+    /**
+     * @ORM\OneToMany(targetEntity=ArticleLi::class, mappedBy="article")
+     */
+    private $li;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
     public function __construct()
     {
         $this->img = new ArrayCollection();
         $this->articleTexts = new ArrayCollection();
         $this->articleTags = new ArrayCollection();
+        $this->li = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -180,6 +196,60 @@ class Article
         if ($this->articleTags->removeElement($articleTag)) {
             $articleTag->removeArticle($this);
         }
+
+        return $this;
+    }
+
+    public function getIntro(): ?string
+    {
+        return $this->intro;
+    }
+
+    public function setIntro(string $intro): self
+    {
+        $this->intro = $intro;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, ArticleLi>
+     */
+    public function getLi(): Collection
+    {
+        return $this->li;
+    }
+
+    public function addLi(ArticleLi $li): self
+    {
+        if (!$this->li->contains($li)) {
+            $this->li[] = $li;
+            $li->setArticle($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLi(ArticleLi $li): self
+    {
+        if ($this->li->removeElement($li)) {
+            // set the owning side to null (unless already changed)
+            if ($li->getArticle() === $this) {
+                $li->setArticle(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }

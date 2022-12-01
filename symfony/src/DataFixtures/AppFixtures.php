@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use Faker\Factory;
+use App\Entity\Article;
 use App\Entity\Realisation;
 use Doctrine\ORM\Mapping\Id;
 use App\Entity\CleaningGuide;
@@ -11,6 +12,7 @@ use App\Entity\SliderRealisation;
 use App\Entity\ChecklistRealisation;
 use Doctrine\Persistence\ObjectManager;
 use App\Repository\RealisationRepository;
+use DateTimeImmutable;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 
 class AppFixtures extends Fixture
@@ -81,12 +83,29 @@ class AppFixtures extends Fixture
         // }
         // // créer les slider_realisation 
 
-        for ($i = 0; $i < 10; $i++) {
-            $sliderRealisation = new SliderRealisation();
-            $sliderRealisation->setImg('5.jpg')
-                ->setAlt($faker->sentence(3));
-            $manager->persist($sliderRealisation);
-        }
+        // for ($i = 0; $i < 10; $i++) {
+        //     $sliderRealisation = new SliderRealisation();
+        //     $sliderRealisation->setImg('5.jpg')
+        //         ->setAlt($faker->sentence(3));
+        //     $manager->persist($sliderRealisation);
+        // }
+
+
+        // Créer des aritcles de blog aléatoires avec Faker et les entity Article, ArticleCategories, ArticleTags, AricleText, ArticleImages.
+for ($i = 0; $i < 10; $i++) {
+    //Créer des dates aléatoires avec dateTimeImmutable et mt_rand
+    $date = new DateTimeImmutable();
+    $date = $date->setTimestamp(mt_rand(1, time()));
+
+    $article = new Article();
+    $article->setTitle($faker->sentence(3))
+        ->setIntro($faker->paragraph(1))
+        ->setSlug($faker->slug(3))
+        ->setCreatedAt($date) ;
+
+    $manager->persist($article);
+}
+
 
 
         $manager->flush();
