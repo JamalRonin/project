@@ -22,6 +22,16 @@ class Article
      */
     private $title;
 
+    /**
+     * @ORM\Column(type="datetime_immutable")
+     */
+    private $createdAt;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=ArticleCategories::class, inversedBy="articles")
+     */
+    private $category;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +45,30 @@ class Article
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeImmutable $createdAt): self
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getCategory(): ?ArticleCategories
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?ArticleCategories $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }
