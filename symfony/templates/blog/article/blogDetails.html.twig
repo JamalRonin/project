@@ -24,42 +24,12 @@
                     <li>Duty or the obligations of business</li>
                 </ul>
                 <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae & sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui dolorem ipsum, quia dolor sit amet consectetur adipisc.</p>
-                {# <div class="bs-info">
+                <div class="bs-info">
                     Tags: 
-                    <a href="#">Design</a>
-                    <a href="#">Language</a>
-                    <a href="#">Machine</a>
-                    <a href="#">Process</a>
-                </div> #}
-                {# <h3 class="title title2 pt-25 pb-22">Leave a Reply</h3>
-                <p class="margin-0 pb-24">Your email address will not be published. Required fields are marked *</p>
-                <div class="comment-note">
-                    <div id="form-messages"></div>
-                    <form id="contact-form" method="post" action="mailer.php">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
-                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name*" required="">
-                                </div> 
-                                <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
-                                    <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail*" required="">
-                                </div>
-                                <div class="col-lg-12 mb-30">
-                                    <textarea class="from-control" id="message" name="message" placeholder="Comment" required=""></textarea>
-                                </div>
-                            </div>
-                            <div class="btn-part">
-                                <div class="form-group mb-0">
-                                    <p class="submit-btn submit-btn2 details">
-                                        <span class="arrow-btn">
-                                            <input type="submit" value="Post Comment">
-                                        </span>
-                                    </p>
-                                </div>
-                            </div> 
-                        </fieldset>
-                    </form>
-                </div> #}
+                 {% for tag in articleTags %}
+                    <a href="#">{{ tag }}</a>
+                 {% endfor %}
+                </div>
             </div>
         </div>
     </div>
