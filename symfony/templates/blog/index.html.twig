@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="row">
 			{% include "blog/blogItem.html.twig" with {'aricles':articles} %}
-			{% include "blog/widgetArea.html.twig" %}
+			{% include "blog/widgetArea.html.twig" with {'articlesRecent':articlesRecent} %}
 		</div> 
 	</div>
 </div>

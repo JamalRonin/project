@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use Faker\Factory;
 use App\Entity\Article;
+use App\Entity\ArticleTags;
 use App\Entity\Realisation;
 use Doctrine\ORM\Mapping\Id;
 use App\Entity\CleaningGuide;
@@ -92,19 +93,27 @@ class AppFixtures extends Fixture
 
 
         // Créer des aritcles de blog aléatoires avec Faker et les entity Article, ArticleCategories, ArticleTags, AricleText, ArticleImages.
-for ($i = 0; $i < 10; $i++) {
-    //Créer des dates aléatoires avec dateTimeImmutable et mt_rand
-    $date = new DateTimeImmutable();
-    $date = $date->setTimestamp(mt_rand(1, time()));
+        // for ($i = 0; $i < 10; $i++) {
+        //     //Créer des dates aléatoires avec dateTimeImmutable et mt_rand
+        //     $date = new DateTimeImmutable();
+        //     $date = $date->setTimestamp(mt_rand(1, time()));
 
-    $article = new Article();
-    $article->setTitle($faker->sentence(3))
-        ->setIntro($faker->paragraph(1))
-        ->setSlug($faker->slug(3))
-        ->setCreatedAt($date) ;
+        //     $article = new Article();
+        //     $article->setTitle($faker->sentence(3))
+        //         ->setIntro($faker->paragraph(1))
+        //         ->setSlug($faker->slug(3))
+        //         ->setCreatedAt($date) ;
 
-    $manager->persist($article);
-}
+        //     $manager->persist($article);
+        // }
+
+
+        //créer une dixaine de tags aléatoires
+            for ($i = 0; $i < 10; $i++) {
+                $tag = new ArticleTags();
+                $tag->setTag($faker->sentence(3));
+                $manager->persist($tag);
+            }
 
 
 

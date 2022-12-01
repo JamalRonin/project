@@ -31,6 +31,7 @@ class BlogController extends AbstractController
         ArticleImagesRepository $articleImagesRepository,
         ArticleCategoriesRepository $articleCategoriesRepository): Response
     {
+        $articlesRecent = $articleRepository->findBy([], ['id' => 'DESC'], 6);
         return $this->render('blog/index.html.twig', [
             'realisations' => $realisationRepository->findAll(),
             'services' => $serviceRepository->findAll(),
@@ -38,6 +39,9 @@ class BlogController extends AbstractController
             'articleTags' => $articleTagsRepository->findAll(),
             'articleTexts' => $articleTextRepository->findAll(),
             'articleImages' => $articleImagesRepository->findAll(),
+            'articleCategories' => $articleCategoriesRepository->findAll(),
+            'articlesRecent' => $articlesRecent,
+            'tags' => $articleTagsRepository->findAll(),
         ]);
     }
 
@@ -55,6 +59,7 @@ class BlogController extends AbstractController
         $articleImages = $article->getImg()->getValues();
         $articleLi = $article->getLi()->getValues();
         $articleCategories = $article->getCategory();
+        $articlesRecent = $articleRepository->findBy([], ['id' => 'DESC'], 6);
         return $this->render('blog/article/show.html.twig', [
             'realisations' => $realisationRepository->findAll(),
             'services' => $serviceRepository->findAll(),
@@ -65,6 +70,7 @@ class BlogController extends AbstractController
             'articleImages' => $articleImages,
             'articleLi' => $articleLi,
             'articleCategories' => $articleCategories,
+            'articlesRecent' => $articlesRecent,
             
 
         ]);
