@@ -2,13 +2,13 @@
 	<div class="container">
 		<div class="breadcrumbs-inner text-center">
 			<h1 class="page-title title-center">
-				Our Core Values Guide Every<br> Decision We Make
+				{{article.title}}
 			</h1>
 			<ul class="single-posts-meta">
 				<li>                                
 					<span>
 						<i class="fi fi-rr-calendar"></i> 
-						January 24, 2022                                    
+						{{article.createdAt|date('d/m/Y')}}                                    
 					</span>
 				<li>
 					<span>                                        
@@ -17,7 +17,7 @@
 				</li>
 				<li class="post-cate">
 					<i class="fi fi-rr-book"></i>
-					<a href="#">Commercial</a>
+					<a href="#">{{article.category}}</a>
 				</li>
 				<li class="post-comment">
 					<i class="fi-rr-comments"></i> 0 

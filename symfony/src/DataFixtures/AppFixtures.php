@@ -3,17 +3,19 @@
 namespace App\DataFixtures;
 
 use Faker\Factory;
+use DateTimeImmutable;
 use App\Entity\Article;
 use App\Entity\ArticleTags;
 use App\Entity\Realisation;
 use Doctrine\ORM\Mapping\Id;
 use App\Entity\CleaningGuide;
+use App\Entity\ArticleCategories;
 use App\Entity\RealisationDetail;
 use App\Entity\SliderRealisation;
 use App\Entity\ChecklistRealisation;
+use App\Repository\ArticleCategoriesRepository;
 use Doctrine\Persistence\ObjectManager;
 use App\Repository\RealisationRepository;
-use DateTimeImmutable;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 
 class AppFixtures extends Fixture
@@ -97,22 +99,28 @@ class AppFixtures extends Fixture
         //     //Créer des dates aléatoires avec dateTimeImmutable et mt_rand
         //     $date = new DateTimeImmutable();
         //     $date = $date->setTimestamp(mt_rand(1, time()));
-
         //     $article = new Article();
         //     $article->setTitle($faker->sentence(3))
         //         ->setIntro($faker->paragraph(1))
         //         ->setSlug($faker->slug(3))
-        //         ->setCreatedAt($date) ;
+        //         ->setCreatedAt($date);
 
         //     $manager->persist($article);
         // }
 
 
         //créer une dixaine de tags aléatoires
-            for ($i = 0; $i < 10; $i++) {
-                $tag = new ArticleTags();
-                $tag->setTag($faker->sentence(3));
-                $manager->persist($tag);
+            // for ($i = 0; $i < 10; $i++) {
+            //     $tag = new ArticleTags();
+            //     $tag->setTag($faker->sentence(3));
+            //     $manager->persist($tag);
+            // }
+
+            for ($i = 0; $i < 10; $i++){
+                $category = new ArticleCategories();
+                $category->setDenomination($faker->sentence(3));
+                $category->setSlug($faker->slug(3));
+                $manager->persist($category);
             }
 
 
