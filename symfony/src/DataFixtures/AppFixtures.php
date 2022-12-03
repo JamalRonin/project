@@ -5,18 +5,21 @@ namespace App\DataFixtures;
 use Faker\Factory;
 use DateTimeImmutable;
 use App\Entity\Article;
+use App\Entity\ArticleH3;
 use App\Entity\ArticleTags;
+use App\Entity\ArticleText;
 use App\Entity\Realisation;
 use Doctrine\ORM\Mapping\Id;
 use App\Entity\CleaningGuide;
 use App\Entity\ArticleCategories;
+use App\Entity\ArticleLi;
 use App\Entity\RealisationDetail;
 use App\Entity\SliderRealisation;
 use App\Entity\ChecklistRealisation;
-use App\Repository\ArticleCategoriesRepository;
 use Doctrine\Persistence\ObjectManager;
 use App\Repository\RealisationRepository;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use App\Repository\ArticleCategoriesRepository;
 
 class AppFixtures extends Fixture
 {
@@ -116,12 +119,37 @@ class AppFixtures extends Fixture
             //     $manager->persist($tag);
             // }
 
-            for ($i = 0; $i < 10; $i++){
-                $category = new ArticleCategories();
-                $category->setDenomination($faker->sentence(3));
-                $category->setSlug($faker->slug(3));
-                $manager->persist($category);
+            // for ($i = 0; $i < 10; $i++){
+            //     $category = new ArticleCategories();
+            //     $category->setDenomination($faker->sentence(3));
+            //     $category->setSlug($faker->slug(3));
+            //     $manager->persist($category);
+            // }
+
+
+
+            for ($i=0; $i < 2; $i++) { 
+
+
+                $text = new ArticleText();
+                $text->setText($faker->paragraph(9))
+                // createdAt dateTImeImmutable
+                ->setCreatedAt(new DateTimeImmutable());
+                    
+                $manager->persist($text);
             }
+
+            // for ($i=0; $i < 10; $i++) { 
+            //     $h3 = new ArticleH3();
+            //     $h3->setH3($faker->sentence(3));
+            //     $manager->persist($h3);
+            // }
+
+            // for ($i=0; $i < 10; $i++) { 
+            //     $li = new ArticleLi();
+            //     $li->setLi($faker->sentence(3));
+            //     $manager->persist($li);
+            // }
 
 
 

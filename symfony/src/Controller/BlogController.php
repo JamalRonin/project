@@ -60,6 +60,8 @@ class BlogController extends AbstractController
         $articleLi = $article->getLi()->getValues();
         $articleCategories = $article->getCategory();
         $articlesRecent = $articleRepository->findBy([], ['id' => 'DESC'], 6);
+        $h3 = $article->getH3();
+        
         return $this->render('blog/article/show.html.twig', [
             'realisations' => $realisationRepository->findAll(),
             'services' => $serviceRepository->findAll(),
@@ -71,6 +73,7 @@ class BlogController extends AbstractController
             'articleLi' => $articleLi,
             'articleCategories' => $articleCategories,
             'articlesRecent' => $articlesRecent,
+            'h3' => $h3,
             
 
         ]);

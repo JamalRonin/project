@@ -64,12 +64,18 @@ class Article
      */
     private $slug;
 
+    /**
+     * @ORM\OneToMany(targetEntity=ArticleH3::class, mappedBy="article")
+     */
+    private $h3;
+
     public function __construct()
     {
         $this->img = new ArrayCollection();
         $this->articleTexts = new ArrayCollection();
         $this->articleTags = new ArrayCollection();
         $this->li = new ArrayCollection();
+        $this->h3 = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -250,6 +256,36 @@ class Article
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, ArticleH3>
+     */
+    public function getH3(): Collection
+    {
+        return $this->h3;
+    }
+
+    public function addH3(ArticleH3 $h3): self
+    {
+        if (!$this->h3->contains($h3)) {
+            $this->h3[] = $h3;
+            $h3->setArticle($this);
+        }
+
+        return $this;
+    }
+
+    public function removeH3(ArticleH3 $h3): self
+    {
+        if ($this->h3->removeElement($h3)) {
+            // set the owning side to null (unless already changed)
+            if ($h3->getArticle() === $this) {
+                $h3->setArticle(null);
+            }
+        }
 
         return $this;
     }
