@@ -1,0 +1,9 @@
+[09-Dec-2022 13:02:25 UTC] PHP Fatal error:  Uncaught LogicException: Symfony Runtime is missing. Try running "composer require symfony/runtime". in /home/yjbt3669/project/symfony/bin/console:8
+Stack trace:
+#0 {main}
+  thrown in /home/yjbt3669/project/symfony/bin/console on line 8
+[09-Dec-2022 13:03:18 UTC] PHP Fatal error:  Uncaught LogicException: Symfony Runtime is missing. Try running "composer require symfony/runtime". in /home/yjbt3669/project/symfony/bin/console:8
+Stack trace:
+#0 {main}
+  thrown in /home/yjbt3669/project/symfony/bin/console on line 8
+[09-Dec-2022 13:03:45 UTC] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in phar:///opt/cpanel/composer/bin/composer/vendor/symfony/console/Helper/HelperSet.php on line 112
