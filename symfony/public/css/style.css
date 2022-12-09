@@ -1081,7 +1081,7 @@ blockquote:before {
   float: left;
 }
 .blog-btn a i {
-  background: #ffd600;
+  background: #007fc6;
   display: inline-block;
   padding: 0;
   border-radius: 50%;
@@ -6308,7 +6308,7 @@ Video CSS
   color: #007fc6;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-btn a i:before {
-  color: #0a0a0a;
+  color: #003e63;
 }
 .rs-blog.blog-main-home .blog-item:hover {
   transform: translateY(-10px);
@@ -7012,7 +7012,7 @@ Video CSS
   position: relative;
 }
 .rs-footer.footer-style1 .footer-top .address-widget li i {
-  color: #ffd600;
+  color: #003e63;
   font-size: 20px!important;
   position: absolute;
   left: 0;
@@ -7048,7 +7048,7 @@ Video CSS
   margin: 15px 20px 27px 0;
 }
 .rs-footer.footer-style1 .footer-top p input[type="email"] {
-  border: 1px solid #ffd600;
+  border: 1px solid #007cf6;
   width: 100%;
   font-size: 13px;
   padding: 15px 20px;
