@@ -252,7 +252,7 @@ h6 {
   background: #fff;
 }
 a {
-  color: #007cfb;
+  color: #007fc6;
   transition: all 0.3s ease;
   text-decoration: none !important;
   outline: none !important;
@@ -261,7 +261,7 @@ a:active,
 a:hover {
   text-decoration: none;
   outline: 0 none;
-  color: #007cfb;
+  color: #007fc6;
 }
 ul {
   list-style: outside none none;
@@ -272,12 +272,12 @@ ul {
   clear: both;
 }
 ::-moz-selection {
-  background: #007cfb;
+  background: #007fc6;
   text-shadow: none;
   color: #ffffff;
 }
 ::selection {
-  background: #007cfb;
+  background: #007fc6;
   text-shadow: none;
   color: #ffffff;
 }
@@ -400,7 +400,7 @@ body.nav-expanded .offwrap {
   background: unset !important;
 }
 .rs-menu-toggle {
-  color: #007cfb;
+  color: #007fc6;
   text-align: right;
 }
 button {
@@ -457,7 +457,7 @@ ul.dot-list li {
 ul.dot-list li:before {
   content: "";
   position: absolute;
-  background: #007cfb;
+  background: #007fc6;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -502,7 +502,7 @@ ul.dot-list.yellow-dot.services-list li {
   display: flex;
 }
 .rs-features-list .feature-item .feature-icon {
-  background-color: #ffd600;
+  background-color: #007fc6;
   font-size: 13px !important;
   width: 30px;
   height: 30px;
@@ -530,10 +530,10 @@ ul.dot-list.yellow-dot.services-list li {
   margin-bottom: 13px;
 }
 .rs-features-list .feature-item .rs-feature-text .title:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-features-list .feature-item:hover .feature-icon {
-  background-color: #007cfb;
+  background-color: #007fc6;
 }
 .rs-features-list .feature-item:hover .feature-icon i {
   color: #ffffff;
@@ -579,7 +579,7 @@ button:focus {
   align-items: center;
   padding: 15px 10px 15px 8px;
   border-radius: 0;
-  background: #007cfb;
+  background: #007fc6;
 }
 .pagination-area .nav-link .page-number {
   padding: 2px 15px 0 20px;
@@ -644,7 +644,7 @@ button:focus {
   right: 4px;
 }
 .pagination-part .active a {
-  color: #007cfb;
+  color: #007fc6;
 }
 .gridFilter button {
   font-size: 17px;
@@ -715,7 +715,7 @@ blockquote:before {
   height: 42px;
   line-height: 42px;
   border-radius: 50%;
-  background: #007cfb;
+  background: #007fc6;
   text-align: center;
   color: #ffffff;
   transition: all 0.5s;
@@ -770,7 +770,7 @@ blockquote:before {
 }
 .rs-carousel.nav-style2 .owl-nav .owl-prev:hover i,
 .rs-carousel.nav-style2 .owl-nav .owl-next:hover i {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-carousel.nav-style2 .owl-nav .owl-prev i:before {
   content: "\f134";
@@ -797,13 +797,13 @@ blockquote:before {
   border-radius: 50px;
   border: none;
   transition: all 0.3s ease;
-  background: #007cfb;
+  background: #007fc6;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .rs-carousel .owl-dots .owl-dot:hover,
 .rs-carousel .owl-dots .owl-dot.active {
   width: 40px;
-  background: #007cfb;
+  background: #007fc6;
   opacity: 1;
 }
 /* no-gutters Class Rules */
@@ -861,7 +861,7 @@ blockquote:before {
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-  color: #0a0a0a;
+  color: #fff;
   background: #ffd600;
   z-index: 1;
   border-radius: 3px;
@@ -871,7 +871,7 @@ blockquote:before {
 .readon.view {
   padding: 18px 34px;
   border-radius: 3px;
-  background: #ffd600;
+  background: #003e63;
 }
 .readon.view:before {
   background-color: #fff;
@@ -886,8 +886,8 @@ blockquote:before {
   opacity: 0;
 }
 .readon.view:hover {
-  background: #007cfb;
-  color: #ffffff;
+  background: #007cf6;
+  color: #003e63;
 }
 .readon.view:hover:before {
   left: 120%;
@@ -1141,7 +1141,7 @@ blockquote:before {
   float: left;
 }
 .services-btn a i {
-  background: #ffd600;
+  background: #007fc6;
   display: inline-block;
   text-align: center;
   padding: 0;
@@ -1191,7 +1191,7 @@ blockquote:before {
   font-weight: 500;
   line-height: 26px;
   color: #0a0a0a;
-  background: #ffd600;
+  background: #003e63;
   z-index: 1;
   border-radius: 3px;
   transition: all 0.4s ease-in-out 0s;
@@ -1205,7 +1205,7 @@ blockquote:before {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  color: #0A0A0A;
+  color: white;
   padding: 17px 30px;
   outline: none;
   transition: all .5s ease;
@@ -1225,7 +1225,7 @@ blockquote:before {
   opacity: 0;
 }
 .submit-btn:hover {
-  background: #ffd600;
+  background: #8fc53f;
   color: #ffd600;
   opacity: 0.99;
 }
@@ -1384,7 +1384,7 @@ blockquote:before {
   line-height: 70px;
   border-radius: 100%;
   text-align: center;
-  background: #ffd600;
+  background: #003e63;
 }
 .address-wrap .address-icon i {
   text-align: center;
@@ -1413,7 +1413,7 @@ blockquote:before {
   height: 70px;
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
-  background: #ffd600;
+  background: #007fc6;
 }
 /*Video Icon*/
 .rs-videos .animate-border .popup-border {
@@ -1557,7 +1557,7 @@ blockquote:before {
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
-  color: #007cfb;
+  color: #007fc6;
   text-transform: uppercase;
   margin: 0 0 10px;
   display: block;
@@ -1569,7 +1569,7 @@ blockquote:before {
   color: #1c6c28;
 }
 .sec-title .sub-text.green-color.yellow-color {
-  color: #FFD600;
+  color: #003e63;
 }
 .sec-title .sub-text.title-color {
   color: #222222;
@@ -1583,10 +1583,10 @@ blockquote:before {
   margin: 0;
 }
 .sec-title .title span {
-  color: #007cfb;
+  color: #007fc6;
 }
 .sec-title .title span.yellow-color {
-  color: #FFD600;
+  color: #003e63;
 }
 .sec-title .title.title2 {
   font-size: 30px;
@@ -1802,7 +1802,7 @@ blockquote:before {
   color: #454545;
 }
 .full-width-header .rs-header .toolbar-area .toolbar-sl-share li a i:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .toolbar-area .clearfix-btn {
   display: flex;
@@ -1908,7 +1908,7 @@ blockquote:before {
 }
 .full-width-header .rs-header .toolbar-area.toolber-style2.toolber-style4 .rs-contact-info li a:hover,
 .full-width-header .rs-header .toolbar-area.toolber-style2.toolber-style4 .clearfix-btn li a i:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .toolbar-area.toolber-style3 {
   background: transparent;
@@ -2022,7 +2022,7 @@ blockquote:before {
 }
 .full-width-header .rs-header .middle-header .rs-contact-info .contact-part .info-icon i:before {
   font-size: 34px;
-  color: #007cfb;
+  color: #003e63;
 }
 .full-width-header .rs-header .middle-header .rs-contact-info .contact-part .contact-info .info-title {
   font-size: 16px;
@@ -2041,7 +2041,7 @@ blockquote:before {
   font-size: 14px;
 }
 .full-width-header .rs-header .middle-header .rs-contact-info .contact-part .contact-info .info-des a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .middle-header .rs-contact-info .contact-part.margin-no {
   margin-right: 0;
@@ -2054,7 +2054,7 @@ blockquote:before {
   color: #00aae4;
 }
 .full-width-header .rs-header .menu-area {
-  background: #007cfb;
+  background: #003e63;
   position: relative;
   z-index: 10;
 }
@@ -2126,7 +2126,7 @@ blockquote:before {
   content: "-";
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item > a {
-  color: #ffd100 !important;
+  color: #8fc53f !important;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu {
   background: #ffffff;
@@ -2152,7 +2152,7 @@ blockquote:before {
   text-transform: capitalize;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li:last-child {
   margin: 0;
@@ -2165,13 +2165,13 @@ blockquote:before {
   right: 100%;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.onepage-menu li.current-menu-item > a {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li a:hover,
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li.active a,
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li.current-menu-item > a,
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li.current-menu-item > a:before {
-  color: #ffd100 !important;
+  color: #8fc53f !important;
 }
 .full-width-header .rs-header .menu-area.sticky {
   background: #fff;
@@ -2183,10 +2183,10 @@ blockquote:before {
   color: #101010;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li.current-menu-item > a {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .rs-header .menu-area.sticky .expand-btn-inner ul .sidebarmenu-search a i {
   display: none;
@@ -2201,7 +2201,7 @@ blockquote:before {
   right: -50px;
   width: 34.25%;
   height: 101%;
-  background: #ffd600;
+  background: #007fc6;
   transform: skew(-28deg);
   z-index: -1;
 }
@@ -2429,7 +2429,7 @@ blockquote:before {
   float: right;
 }
 .full-width-header .mobile-menu .rs-menu-toggle.primary {
-  color: #007cfb;
+  color: #007fc6;
 }
 .full-width-header .mobile-menu .rs-menu-toggle.secondary {
   color: #ffd600;
@@ -2457,7 +2457,7 @@ blockquote:before {
   top: 40px;
 }
 .full-width-header .right_menu_togle {
-  background-image: linear-gradient(90deg, #e2e9f7 0%, #ffffff 100%);
+  background-image: linear-gradient(90deg, #ffffff -10%, #007fc6 100%);
   padding: 46px 60px 50px 50px;
   font-size: 1.15em;
   max-width: 480px;
@@ -2490,7 +2490,7 @@ blockquote:before {
   transform: translate(-50%, -50%) rotate(45deg);
   width: 1px !important;
   height: 25px !important;
-  background: #01539f;
+  background: #003e63;
   border: none !important;
   transition: all 0.3s ease;
 }
@@ -2498,7 +2498,7 @@ blockquote:before {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 .full-width-header .right_menu_togle .close-btn:hover .nav-close .line span {
-  background: #007cfb;
+  background: #007fc6;
 }
 .full-width-header .right_menu_togle .canvas-logo {
   padding-left: 0;
@@ -2649,7 +2649,7 @@ blockquote:before {
 }
 .full-width-header .mobile-navbar-menu .nav-menu li.active-menu a,
 .full-width-header .mobile-navbar-menu .nav-menu li a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 body.modal-open {
   padding: 0 !important;
@@ -3071,7 +3071,7 @@ body .search-modal .close:hover {
   font-size: 16px;
   line-height: 25px;
   font-weight: 600;
-  color: #007cfb;
+  color: #007fc6;
   text-transform: uppercase;
   display: block;
   margin: 0 0 12px 0;
@@ -3087,7 +3087,7 @@ body .search-modal .close:hover {
   font-size: 52px;
   line-height: 55px;
   font-weight: 700;
-  color: #007cfb;
+  color: #007fc6;
   margin: 0 0 10px 0;
 }
 .rs-banner.banner-main-home .content-wrap .title-small span {
@@ -3880,14 +3880,14 @@ body .search-modal .close:hover {
   top: 129px;
   width: 100%;
   height: 108px;
-  background: #007CFB;
+  background: #007fc6;
   transform: scale(1.2) rotate(-4deg);
 }
 .rs-contact.contact-style1 .widget-wrap .rs-requset {
   padding: 0px 80px 70px;
   position: relative;
   z-index: 11;
-  background: #007CFB;
+  background: #007fc6;
 }
 .rs-contact.contact-style1 .widget-wrap .rs-requset .contact-widget .from-control {
   padding: 15px 20px 15px 20px;
@@ -3895,8 +3895,8 @@ body .search-modal .close:hover {
   font-size: 15px;
   color: #FFFFFF;
   border-style: solid;
-  border-color: #1988FA;
-  background-color: #1988FA;
+  border-color: #003e63;
+  background-color: #003e63;
   width: 100%;
   max-width: 100%;
   opacity: 1;
@@ -3908,8 +3908,8 @@ body .search-modal .close:hover {
   color: #FFFFFF;
   border-style: solid;
   border-width: 1px 12px 1px 1px;
-  border-color: #1988FA;
-  background-color: #1988FA;
+  border-color: #003e63;
+  background-color: #003e63;
   width: 100%;
   max-width: 100%;
 }
@@ -3948,7 +3948,7 @@ body .search-modal .close:hover {
   transform: translate(-50%, -50%);
 }
 .rs-contact.contact-style1 .address-wrap .address-icon i {
-  color: #01539f;
+  color: #007cf6;
   font-size: 30px;
 }
 .rs-contact.contact-style1 .contact-animate .animate-style {
@@ -4366,7 +4366,7 @@ body .search-modal .close:hover {
   position: relative;
 }
 .rs-videos .overly-border {
-  border: 1px solid #ffd600;
+  border: 1px solid #003e63;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -4390,12 +4390,12 @@ body .search-modal .close:hover {
   top: 50%;
   z-index: 9;
   text-align: center;
-  background: #007cfb;
+  background: #007fc6;
 }
 .rs-videos .overly-border a i {
   font-size: 30px;
   line-height: 80px;
-  color: #ffd600;
+  color: #003e63;
   position: relative;
   z-index: 1;
 }
@@ -4412,7 +4412,7 @@ body .search-modal .close:hover {
   border-radius: 50%;
   animation: pulse-border 1500ms ease-out infinite;
   transition: all 0.3s ease;
-  background: #007cfb;
+  background: #007fc6;
 }
 .rs-videos .overly-border a:after {
   content: "";
@@ -4476,7 +4476,7 @@ Video CSS
   position: absolute;
   left: 59%;
   top: -25px;
-  color: #FFD1004D;
+  color: #007fc66e;
   font-size: 60px;
   font-weight: 700;
   z-index: -11;
@@ -4678,7 +4678,7 @@ Video CSS
 }
 .rs-project.project-style1 .project-item .project-content .p-icon i:before {
   font-size: 18px;
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-project.project-style1 .project-item:hover .project-img:before {
   opacity: 1;
@@ -4696,10 +4696,10 @@ Video CSS
   visibility: visible;
 }
 .rs-project.project-style1 .rs-carousel .owl-dots .owl-dot {
-  background: #01539f;
+  background: #8fc53f;
 }
 .rs-project.project-style1 .rs-carousel .owl-dots .owl-dot.active {
-  background: #ffd600;
+  background: #003e63;
 }
 .rs-project.project-style1.project-style2 {
   margin-top: unset;
@@ -4893,7 +4893,7 @@ Video CSS
   transition: all 0.5s;
 }
 .rs-services.services-style1 .services-item .services-images .services-icon {
-  background: #ffd600;
+  background: #007fc6;
   right: 12px;
   bottom: 12px;
   position: absolute;
@@ -4923,7 +4923,7 @@ Video CSS
   color: #0a0a0a;
 }
 .rs-services.services-style1 .services-item .services-text .services-title .title a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-services.services-style1 .services-item .services-text .services-txt {
   margin: 0 0 20px;
@@ -4932,7 +4932,7 @@ Video CSS
   color: #0a0a0a;
 }
 .rs-services.services-style1 .services-item .services-text .services-btn a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-services.services-style1 .services-item:hover .services-images .services-icon {
   bottom: 20px;
@@ -5260,7 +5260,7 @@ Video CSS
   color: #101010;
 }
 .rs-services.services-style5 .flip-box-inner .flip-box-wrap .front-part .front-content-part .front-title-part .title a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-services.services-style5 .flip-box-inner .flip-box-wrap .front-part .front-content-part .front-desc-part p {
   font-size: 15px;
@@ -5602,7 +5602,7 @@ Video CSS
 }
 .rs-services-single .widget-item li a:hover i,
 .rs-services-single .widget-item li a:hover span {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-services-single .widget-item li:first-child {
   border-top: none;
@@ -5658,7 +5658,7 @@ Video CSS
   color: #ffffff;
 }
 .rs-services-single .call-us .contact-widget .title a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 /* ------------------------------------
 	19. Faq Section CSS
@@ -6203,7 +6203,7 @@ Video CSS
   font-size: 16px;
   font-weight: 300;
   padding-right: 12px;
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-pricing.pricing-style1 .pricing-wrap-widget .pricing-table-middle .pricing-table-body ul li span {
   font-size: 16px;
@@ -6259,7 +6259,7 @@ Video CSS
 .rs-blog.blog-main-home .blog-item .image-wrap .post-categories li a {
   border-radius: 4px 4px 4px 4px;
   background-color: transparent;
-  background-image: linear-gradient(180deg, #007cfb 0%, #007cfb 100%);
+  background-image: linear-gradient(180deg, #007fc6 0%, #007fc6 100%);
   color: #ffffff;
   transition: 0.4s;
   font-size: 14px;
@@ -6285,11 +6285,11 @@ Video CSS
   padding-right: 8px;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-meta .admin i {
-  color: #007cfb;
+  color: #007fc6;
   margin-right: 5px;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-meta .date i {
-  color: #007cfb;
+  color: #007fc6;
   margin-right: 3px;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-title {
@@ -6302,10 +6302,10 @@ Video CSS
   color: #0a0a0a;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-title a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-btn a span:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-blog.blog-main-home .blog-item .blog-content .blog-btn a i:before {
   color: #0a0a0a;
@@ -7039,7 +7039,7 @@ Video CSS
   text-align: center;
 }
 .rs-footer.footer-style1 .footer-top .footer-social li a i:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-footer.footer-style1 .footer-top .footer-social li:last-child {
   margin: 0;
@@ -7112,7 +7112,7 @@ Video CSS
   color: #0a0a0a;
 }
 .rs-footer.footer-style1 .footer-bottom .copyright p a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-footer.footer-style1 .footer-bottom .copy-right-menu li {
   position: relative;
@@ -7123,7 +7123,7 @@ Video CSS
   color: #454545;
 }
 .rs-footer.footer-style1 .footer-bottom .copy-right-menu li a:hover {
-  color: #007cfb;
+  color: #007fc6;
 }
 .rs-footer.footer-style1.footer-main-home {
   background-image: url(../images/bg/footer-bg2.jpg);
@@ -7202,7 +7202,7 @@ Video CSS
   color: #ffffff;
 }
 .rs-footer.footer-style1.footer-style4 .footer-top p input[type="submit"] {
-  background: #007cfb;
+  background: #007fc6;
   color: #ffffff;
 }
 .rs-footer.footer-style1.footer-style5 {
@@ -7232,11 +7232,11 @@ Video CSS
 .home-primary-color .full-width-header .right_menu_togle .close-btn .nav-close .line span,
 .home-primary-color .full-width-header .right_menu_togle .canvas-contact .social li a i,
 .home-primary-color .search-modal {
-  background: #007cfb;
+  background: #003e63;
 }
 .home-primary-color .full-width-header .right_menu_togle .canvas-contact .address-area .address-list .info-content em a:hover,
 .home-primary-color .full-width-header .right_menu_togle .canvas-contact .address-area .address-list .info-icon i:before {
-  color: #007cfb;
+  color: #003e63;
 }
 .home-green-color .search-modal {
   background: #1c6c28;
@@ -7330,7 +7330,7 @@ Video CSS
 }
 #scrollUp.cyan-color i {
   color: #ffffff;
-  background: #007cfb;
+  background: #007fc6;
 }
 #scrollUp.paste-color i {
   color: #ffffff;
