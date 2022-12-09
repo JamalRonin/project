@@ -1,0 +1,39 @@
+<!-- Checklist Section Start -->
+{% for check in checklist %}
+<div class="rs-checklist gray-bg pt-120 pb-120 md-pt-80 md-pb-80">
+	<div class="container">
+		<div class="row y-middle">
+			<div class="col-lg-6 pr-46 md-pr-15 md-mb-50">
+				<div class="sec-title2">
+					<div class="brush-content mb-8">
+						<img src="{{asset('/images/brush.png')}}" alt="">
+						<span class="sub-text small-text">Checklist</span>
+					</div>
+					<h2 class="title title2 pb-22">
+						{{ check.title }}
+					</h2>
+					<div class="desc pb-22">
+						{{check.description}}
+					</div>
+					<ul class="brush-list style2">
+						<li>{{check.li1}}</li>
+						<li>{{check.li2}}</li>
+						<li>{{check.li3}}</li>
+						<li>{{check.li4}}</li>
+						<li>{{check.li5}}</li>
+					</ul>
+					<div class="desc pt-22">
+						{{check.information}}
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 text-right md-text-center">
+				<div class="checklist-img">
+					<img src="{{asset('/images/project/details/' ~ check.img ~ '')}}" alt="{{check.alt}}">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+<!-- Checklist Section End -->

@@ -1,0 +1,36 @@
+<!-- Team Section Start -->
+{#Attente de retour de Mohamed pour voir si on garde cette section ou pas#}
+<div class="rs-team team-style1 gray-bg pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="container">
+        <div class="row">
+            {% for membre in expertMembers %}
+                <div class="col-lg-4 col-md-6 md-mb-30">
+                    <div class="team-item-wrap">
+                        <div class="team-inner-wrap">
+                            <div class="image-wrap">
+                                <div class="image-inner">
+                                    <a href="{{path('app_member_show', {slug: membre.slug})}}">
+                                        <img src="{{asset('/images/team/' ~ membre.img ~ '')}}" alt="Team">
+                                    </a>
+                                </div>
+                                <i class="fi fi-rr-share share-i"></i>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>                               
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>                               
+                                    <a href="#"><i class="fa fa-facebook"></i></a>                               
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <div class="member-desc">
+                                    <h3 class="team-name"><a href="{{path('app_member_show', {slug: membre.slug})}}">{{membre.fullname}}</a></h3>
+                                    <span class="team-title">{{membre.teamTitle}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Team Section End -->

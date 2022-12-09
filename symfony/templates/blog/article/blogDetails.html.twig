@@ -1,0 +1,35 @@
+<div class="col-lg-8 pr-35 md-pr-15 md-mb-50">
+    <div class="blog-details">
+        <div class="blog-full">
+            <div class="bs-img">
+                <img src="{{asset('/images/blog/style1/1.jpg')}}" alt="Blog">
+            </div>
+            <div class="blog-content-full">
+                <p class="marign-0 pt-34">
+                    {{articleTexts.0.text}}
+                </p>
+                <blockquote><p>{{articleTexts.1.text}}</p></blockquote>
+
+                <p class="margin-0 pb-40">{{articleTexts.2.text}}</p>
+
+                <div class="bs-img">
+                    <img src="{{asset('/images/blog/style1/1.jpg')}}" alt="Blog">
+                </div>
+                <h3 class="title pt-35 pb-12">{{h3.3.h3}}</h3>
+                <p>{{articleTexts.4.text}}</p>
+                <ul class="listing-style">
+                {% for li in articleLi %}
+                    <li>{{li}}</li>
+                {% endfor %}
+                </ul>
+                {{articleTexts.5.text}}</p>
+                <div class="bs-info">
+                    Tags: 
+                 {% for tag in articleTags %}
+                    <a href="#">{{ tag }}</a>
+                 {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

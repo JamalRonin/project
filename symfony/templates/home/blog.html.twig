@@ -1,0 +1,41 @@
+<div id="rs-blog" class="rs-blog blog-main-home pt-115 pb-120 md-pt-75 md-pb-80">
+    <div class="container">
+        <div class="sec-title mb-60 md-mb-40 text-center">
+            <span class="sub-text pb-10">DERNIÈRES NOUVELLES</span>
+            <h2 class="title">
+                Consultez notre dernier<br>
+                <span>blog</span> d'actualités
+            </h2>
+            <div class="line-img blog-center wow fadeInUp">
+                <img src="{{asset('/images/line.png')}}" alt="Images">
+            </div>
+        </div> 
+        <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+           {% for i in 0..9 %}
+                        <div class="blog-item">
+                <div class="image-wrap">
+                    <a href="single-post.html"><img src="{{asset('/images/blog/1.jpg')}}" alt=""></a>
+                    <ul class="post-categories">
+                        <li><a href="blog-single.html">Commercial</a></li>
+                    </ul>
+                </div>
+                <div class="blog-content">
+                    <ul class="blog-meta">
+                        <li class="admin"><i class="fi fi-rr-calendar"></i>27 Jan 2022</li>
+                        <li class="date"><i class="fi  fi-rr-user"></i>Admin</li>
+                    </ul>
+                    <h3 class="blog-title"><a href="single-post.html">The Secret offer Cleaning Your Beadroom & Toilet</a></h3>
+                    <div class="blog-btn">
+                        <a href="single-post.html">
+                            <span class="btn-text">
+                                Read More                           
+                            </span>
+                            <i class="fi fi-rr-arrow-small-right"></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+           {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!-- About Section Start -->
+<div id="rs-about" class="rs-about pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="container">
+        {% for argument in about %}
+        <div class="row y-middle">
+            <div class="col-lg-6 pr-53 md-pr-15 md-mb-50">
+                <div class="sec-title2">
+                    <div class="brush-content mb-20">
+                        <img src="{{asset('/images/' ~ argument.icone ~ '')}}" alt="icone">
+                        <span class="sub-text">{{argument.subText}}</span>
+                    </div>
+                    <h2 class="title pb-28">
+                        {{argument.title}}
+                    </h2>
+                    <div class="desc pb-21">
+                       {{argument.description}}
+                    </div>
+                    <ul class="brush-list style3">
+                        <li>{{argument.li1}}</li>
+                        <li>{{argument.li2}}</li>
+                        <li>{{argument.li3}}</li>
+                        <li>{{argument.li4}}</li>
+                        <li>{{argument.li5}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="services-img">
+                    <img src="{{asset('/images/services/' ~ argument.img ~ '')}}" alt="{{argument.alt}}">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- About Section End -->

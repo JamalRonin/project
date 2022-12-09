@@ -1,0 +1,105 @@
+<div class="menu-area menu-sticky">
+	<div class="container">
+		<div class="row-table">
+			<div class="col-cell header-logo">
+				<div class="logo-area">
+					<a href="index.html">
+						<img class="sticky-logo" src="" alt="logo">
+					</a>
+				</div>
+			</div>
+			<div class="col-cell">
+				<div class="rs-menu-area">
+					<div class="main-menu">
+						<nav class="rs-menu hidden-md">
+							<ul class="nav-menu">
+								<li class="menu-item-has-children current-menu-item">
+									<a href="{{path('app_home')}}">Accueil</a>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="{{path('app_about')}}">A propos</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="{{path('app_faq')}}">Faq</a>
+										</li>
+										<li>
+											<a href="{{path('app_devis')}}">Devis</a>
+										</li>
+										<li>
+											<a href="{{path('app_expert_members')}}">Membres expert</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="{{path('app_service')}}">Services</a>
+									<ul class="sub-menu">
+									{% for service in services %}
+											<li>
+												<a href="{{path('app_service_show', {slug: service.slug })}}">{{service.denomination}}</a>
+											</li>
+									{% endfor %}
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="{{path('app_project')}}">Nos réalisations</a>
+									<ul class="sub-menu">
+										{% for realisation in realisations %}
+											<li>
+												<a href="{{path('app_project_show', {slug: realisation.slug })}}">{{realisation.title}}</a>
+											</li>
+										{% endfor %}
+										{# <li>
+											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">interventions en milieu hospitalier</a>
+										</li>
+										<li>
+											<a href="{{path('app_project_show', {slug: 'parc-immobilier' })}}">Interventions parc immobilier</a>
+										</li>
+										<li>
+											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">Interventions en milieu tertiaire</a>
+										</li>
+										<li>
+											<a href="{{path('app_project_show', {slug: 'usine-nord' })}}">Nettoyage usine et entrepots</a>
+										</li>
+										<li>
+											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">Nettoyage sur chantiers</a>
+										</li>
+										<li>
+											<a href="{{path('app_project_show', {slug: 'milieu-hopitalier' })}}">Les demandes urgente</a>
+										</li> #}
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="{{path('app_blog')}}">Blog</a>
+								</li>
+								<li>
+									<a href="{{path('app_contact')}}">Contact</a>
+								</li>
+							</ul>
+							<!-- //.nav-menu -->
+						</nav>
+					</div>
+					<!-- //.main-menu -->
+				</div>
+			</div>
+			<div class="col-cell">
+				<div class="expand-btn-inner">
+					<ul>
+						<li class="sidebarmenu-search">
+							<a class="hidden-xs rs-search" data-bs-toggle="modal" data-bs-target="#searchModal" href="#">
+								<i class="fi fi-rr-search"></i>
+							</a>
+						</li>
+						<li class="nav-link">
+							<a id="nav-expander" class="nav-expander bar" href="#">
+								<span class="dot-hum"></span>
+								<span class="dot-hum"></span>
+								<span class="dot-hum"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

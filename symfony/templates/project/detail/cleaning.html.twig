@@ -1,0 +1,45 @@
+<!-- Cleaning Guide Section Start -->
+{% for clean in cleaningGuide %}
+<div class="rs-cleaning cleaning-style1 pt-120 pb-120 md-pt-80 md-pb-80">
+	<div class="container">
+		<div class="row y-middle">
+			<div class="col-lg-6 md-mb-50">
+				<div class="cheaning-img">
+					<div class="rs-videos">
+						<div class="animate-border">
+							<a class="popup-border popup-videos" href="https://www.youtube.com/watch?v=FMvA5fyZ338">
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 pl-35 md-pl-15">
+				<div class="sec-title2">
+					<div class="brush-content mb-8">
+						<img src="{{asset('/images/brush.png')}}" alt="">
+						<span class="sub-text small-text">Cleaning Guide</span>
+					</div>
+					<h2 class="title title2 pb-22">
+						{{clean.title}}
+					</h2>
+					<div class="desc pb-22">
+						{{clean.description}}
+					</div>
+					<ul class="brush-list style2">
+						<li>{{clean.li1}}</li>
+						<li>{{clean.li2}}</li>
+						<li>{{clean.li3}}</li>
+						<li>{{clean.li4}}</li>
+						<li>{{clean.li5}}</li>
+					</ul>
+					<div class="desc pt-22">
+						{{clean.information}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+<!-- Cleaning Guide Section End -->

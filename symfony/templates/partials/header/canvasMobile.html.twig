@@ -1,0 +1,92 @@
+<nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+	<div class="close-btn">
+		<a id="nav-close2" class="nav-close">
+			<div class="line">
+				<span class="line1"></span>
+				<span class="line2"></span>
+			</div>
+		</a>
+	</div>
+	<ul class="nav-menu">
+		<li class="menu-item-has-children current-menu-item">
+			<a href="{{path('app_home')}}">Accueil</a>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="{{path('app_about')}}">À propos</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="{{path('app_faq')}}">Faq</a>
+				</li>
+				<li>
+					<a href="{{path('app_devis')}}">Devis</a>
+				</li>
+				<li>
+					<a href="{{path('app_expert_members')}}">Membres expert</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="{{path('app_service')}}">Services</a>
+			<ul class="sub-menu">
+				{% for service in services %}
+					<li>
+						<a href="{{path('app_service_show', {slug: service.slug })}}">{{service.denomination}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="{{path('app_project')}}">Nos réalisations</a>
+			<ul class="sub-menu">
+				{% for realisation in realisations %}
+					<li>
+						<a href="{{path('app_project_show', {slug: realisation.slug })}}">{{realisation.title}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="{{path('app_blog')}}">Blog</a>
+		</li>
+		<li>
+			<a href="{{path('app_contact')}}">Contact</a>
+		</li>
+	</ul>
+	<!-- //.nav-menu -->
+
+	<!-- //.nav-menu -->
+	<div class="canvas-contact">
+		<div class="address-area">
+			<div class="address-list">
+				<div class="info-icon">
+					<i class="flaticon-location"></i>
+				</div>
+				<div class="info-content">
+					<h4 class="title">Addresse</h4>
+					<em>03 rue witten, 60000 Beauvais</em>
+				</div>
+			</div>
+			<div class="address-list">
+				<div class="info-icon">
+					<i class="flaticon-email"></i>
+				</div>
+				<div class="info-content">
+					<h4 class="title">Mail</h4>
+					<em>
+						<a href="mailto:support@devsdesign.net">contact@net&sur.com</a>
+					</em>
+				</div>
+			</div>
+			<div class="address-list">
+				<div class="info-icon">
+					<i class="flaticon-call"></i>
+				</div>
+				<div class="info-content">
+					<h4 class="title">Téléhone</h4>
+					<em>++33 03 00 00 00 00</em>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+

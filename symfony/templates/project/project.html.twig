@@ -1,0 +1,24 @@
+<!-- Project Section Start -->
+<div class="rs-project project-style1 project-style3 pt-120 pb-120 md-pt-80 md-pb-80">
+	<div class="container">
+		<div class="row">
+			{% for realisation in realisations %}
+			<div class="col-lg-4 col-md-6 mb-30">
+				<div class="project-item">
+					<div class="project-img">
+						<img src="{{asset('/images/project/style1/' ~ realisation.img ~ '')}}" alt="images">
+					</div>
+					<div class="project-content"> 
+						<div class="project-inner">
+							<h3 class="title"><a href="{{path('app_project_show', {slug: realisation.slug })}}">{{realisation.title}}</a></h3>
+							<span class="category">{{realisation.information}}</span>
+						</div>
+						<a class="p-icon" href="{{path('app_project_show', {slug: realisation.slug })}}"><i class="fa fi fi-rr-plus"></i></a>
+					</div>
+				</div>
+			</div>				
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- Project Section End -->

@@ -1,0 +1,35 @@
+<!-- Services Section Start -->
+<div class="rs-services services-style1 services-inner-style1 pt-120 pb-120 md-pt-80 md-pb-80">
+    <div class="container">
+        <div class="row y-middle">
+        {% for service in services %}
+                        <div class="col-lg-4 col-md-6 mb-30">
+                <div class="services-item">
+                    <div class="services-images">
+                        <img class="main-img" src="{{asset('/images/services/main-home/main-img/' ~ service.img ~ '')}}" alt="">
+                        <div class="services-icon">
+                            <img class="main-icons" src="{{asset('/images/services/main-home/main-icons/' ~ service.icone ~ '')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="services-text">
+                        <div class="services-title">                            
+                            <h3 class="title"><a href="{{path('app_service_show', {slug: service.slug })}}">{{service.denomination}}</a></h3>
+                        </div>
+                        <p class="services-txt">{{service.accueilDesc}}</p>
+                        <div class="services-btn">
+                            <a href="{{path('app_service_show', {slug: service.slug })}}">
+                                <span class="btn-text">
+                                    Voir plus                           
+                                </span>
+                                <i class="fi fi-rr-arrow-small-right"></i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{#Note à moi même : si le rendu des cartes n'est pas bonne, insérer via js md-mb-30 à la 4ème cartes, la 5ème sm-mb-30 et la 6ème sans mb-30#}
+<!-- Services Section End -->

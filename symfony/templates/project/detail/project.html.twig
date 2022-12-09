@@ -1,0 +1,122 @@
+<!-- Project Details Section Start -->
+{% for info in detail %}
+<div class="rs-project-details pt-120 pb-120 md-pt-80 md-pb-80">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 md-mb-50">
+				<div class="sec-title2 mb-40">
+					<div class="brush-content mb-8">
+						<img src="{{asset('/images/brush.png')}}" alt="">
+						<span class="sub-text small-text">Détail du projet</span>
+					</div>
+					<h2 class="title title2 pb-22">
+						{{info.title}}
+					</h2>
+					<div class="desc">
+						{{info.description}}
+					</div>
+				</div>
+				<!-- Counter Section Start -->
+				<div class="rs-counter counter-style2">
+					<div class="counter-top">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 md-mb-40">
+								<div class="rs-counter-list">
+									<div class="counter-text">
+										<div class="counter-icon">
+											<img src="{{asset('/images/counter/icons/1.png')}}" alt="Icons">
+										</div>
+										<div class="counter-number">
+											<span class="rs-count">1500</span>
+											<span class="prefix">+</span>
+											<h5 class="title">Services Provider</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 sm-mb-40">
+								<div class="rs-counter-list">
+									<div class="counter-text">
+										<div class="counter-icon">
+											<img src="{{asset('/images/counter/icons/2.png')}}" alt="Icons">
+										</div>
+										<div class="counter-number">
+											<span class="rs-count">2070</span>
+											<span class="prefix">+</span>
+											<h5 class="title"> Order Served</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="rs-counter-list">
+									<div class="counter-text">
+										<div class="counter-icon">
+											<img src="{{asset('/images/counter/icons/3.png')}}" alt="Icons">
+										</div>
+										<div class="counter-number">
+											<span class="rs-count">6080</span>
+											<span class="prefix">+</span>
+											<h5 class="title">5 Star Received</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="counter-animation">
+							<div class="animate-ball one">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
+							</div>
+							<div class="animate-ball two">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
+							</div>
+							<div class="animate-ball three">
+								<img src="{{asset('/images/ball.png')}}" alt="Images">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Counter Section End -->
+			</div>
+			<div class="col-lg-4 pl-40 md-pl-15">
+				<div class="project-information">
+					<div class="project-title">
+						<h3 class="title">Project information</h3>
+					</div>
+					<div class="project-content mb-22">
+						<h4 class="title">Skills</h4>
+						<div class="description">
+							{{info.skills}}            		
+						</div>
+					</div>
+					<div class="project-content mb-22">
+						<h4 class="title">Client</h4>
+						<div class="description">
+							{{info.client}}           		
+						</div>
+					</div>
+					<div class="project-content mb-22">
+						<h4 class="title">Date de fin</h4>
+						<div class="description">
+							{{info.finDeRealisation}}          		
+						</div>
+					</div>
+					<div class="project-content mb-22">
+						<h4 class="title">Manager</h4>
+						<div class="description">
+							{{info.manager}}           		
+						</div>
+					</div>
+					<div class="project-content">
+						<h4 class="title">Location</h4>
+						<div class="description">
+							{{info.adresse}}           		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+<!-- Project Details Section End -->

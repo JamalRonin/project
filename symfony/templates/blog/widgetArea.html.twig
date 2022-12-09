@@ -1,0 +1,36 @@
+<div class="col-lg-4 col-md-12">
+    <div class="widget-area">
+        <div class="search-widget mb-50">
+            <div class="search-wrap">
+                <input type="search" placeholder="Searching..." name="s" class="search-input" value="">
+                <button type="submit" value="Search"><i class="flaticon-search"></i></button>
+            </div>
+        </div>
+        <div class="recent-posts mb-50">
+            <div class="widget-title">
+                <h3 class="title">Nos derniers articles</h3>
+            </div>
+            {% for articleRecent in articlesRecent %}
+            <div class="recent-post-widget">
+                <div class="post-img">
+                    <a href="{{path('app_blog_show' , {slug:articleRecent.slug})}}"><img src="{{asset('/images/blog/inner/style2/1.jpg')}}" alt=""></a>
+                </div>
+                <div class="post-desc">
+                    <a href="{{path('app_blog_show' , {slug:articleRecent.slug})}}">{{articleRecent.title}}</a>
+                    <span class="date-post"> <i class="fi fi-rr-calendar"></i>{{articleRecent.createdAt|date('d/m/Y')}}</span>
+                </div>
+            </div>               
+            {% endfor %}
+        </div>
+        <div class="tags-cloud">
+            <div class="widget-title pb-23">
+                <h3 class="title">Tags</h3>
+            </div>
+            <div class="tagcloud">
+            {% for tag in tags %}
+                <a href="#">{{tag.tag}}</a>                
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

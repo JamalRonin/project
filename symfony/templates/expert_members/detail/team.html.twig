@@ -1,0 +1,66 @@
+<!-- Team Start -->
+<div class="rs-team-single pt-120 pb-100 md-pt-80 md-pb-60">
+    <div class="container">
+        <div class="btm-info-team">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 md-mb-50">
+                        <div class="images-part">
+                            <img src="{{asset('/images/team/' ~ expertMember.img ~ '')}}" alt="{{expertMember.alt}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="con-info">
+                            <span class="designation-info">{{expertMember.designationInfo}}</span>
+                            <h2 class="title">{{expertMember.fullname}}</h2>
+                            <div class="short-desc">
+                                {{expertMember.shortDesc}}                             
+                            </div>
+                            <div class="ps-informations">
+                                <ul class="personal-info">
+                                    <li>
+                                        <span><i class="flaticon-email"></i></span>
+                                        <a href="mailto:aliha@Devsdesign.com">{{expertMember.mail}}</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-call"></i></span> {{expertMember.telephone}}
+                                    </li>
+                                </ul>
+                                <ul class="social-info">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 pr-55 md-pr-15">
+                <div class="project-con">
+                    <h3>Biographie</h3>
+                    <p class="margin-0 pb-25">{{expertMember.biographie1}}</p>
+                    <p class="margin-0">{{expertMember.biographie2}}</p>
+                </div>
+            </div>
+            <div class="col-lg-5 md-mt-55">
+                <h3 class="margin-0 pb-25">Compétences</h3>
+                    <!-- Skillbar Section Start -->
+                <div class="rs-skillbar skillbar-style1">
+                    <div class="cl-skill-bar">
+                        <!-- Start Skill Bar -->
+                        {% for skill in skills %}
+                        <span class="skillbar-title">{{skill.title}}</span>
+                        <div class="skillbar" data-percent="{{skill.percent}}">
+                            <p class="skillbar-bar"></p>
+                            <span class="skill-bar-percent"></span> 
+                        </div>                            
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- Skillbar Section End -->
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- Team End -->

@@ -1,0 +1,28 @@
+<div class="rs-breadcrumbs img5">
+	<div class="container">
+		<div class="breadcrumbs-inner text-center">
+			<h1 class="page-title title-center">
+				{{article.title}}
+			</h1>
+			<ul class="single-posts-meta">
+				<li>                                
+					<span>
+						<i class="fi fi-rr-calendar"></i> 
+						{{article.createdAt|date('d/m/Y')}}                                    
+					</span>
+				<li>
+					<span>                                        
+						<i class="fi fi-rr-user"></i> admin                                        
+					</span>
+				</li>
+				<li class="post-cate">
+					<i class="fi fi-rr-book"></i>
+					<a href="#">{{articleCategories.denomination}}</a>
+				</li>
+				<li class="post-comment">
+					<i class="fi-rr-comments"></i> 0 
+				</li>
+			</ul>                
+		</div>
+	</div>
+</div>
