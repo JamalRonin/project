@@ -37,7 +37,6 @@ class ExpertMembersController extends AbstractController
         $skills = $expertMember->getSkills()->getValues();
         $services = $serviceRepository->findAll();
         $realisations = $realisationRepository->findAll();
-        dump($skills);
         return $this->render('expert_members/detail/show.html.twig', [
             'slug' => $slug,
             'expertMember' => $expertMember,

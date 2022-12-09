@@ -38,7 +38,6 @@ class ServiceController extends AbstractController
         $chooseUs = $service->getChooseUs()->getValues();
         $services = $serviceRepository->findAll();
         $realisations = $realisationRepository->findAll();
-        dump($title);
         return $this->render('service/detail/show.html.twig', [
             'slug' => $slug,
             'service' => $service,
