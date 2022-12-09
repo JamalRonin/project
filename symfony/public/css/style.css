@@ -4610,7 +4610,7 @@ Video CSS
   left: 0;
   width: 100%;
   height: 0;
-  background: #007BF9;
+  background: #007fc6;
   visibility: hidden;
   transition: all 0.4s ease 0s;
   transform: rotate(-10deg) scale(1.2);
@@ -4670,7 +4670,7 @@ Video CSS
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background: #ffd600;
+  background: #003e63;
   line-height: 55px;
   color: #fff;
   text-align: center;
@@ -4678,7 +4678,7 @@ Video CSS
 }
 .rs-project.project-style1 .project-item .project-content .p-icon i:before {
   font-size: 18px;
-  color: #007fc6;
+  color: #FFFFFF;
 }
 .rs-project.project-style1 .project-item:hover .project-img:before {
   opacity: 1;
