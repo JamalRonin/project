@@ -10,7 +10,7 @@
 
 /public/.htaccess
 ###< symfony/framework-bundle ###
-
+/public/.htaccess
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
