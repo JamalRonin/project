@@ -27,87 +27,52 @@
                                     <div class="mauticform-error" id="mauticform_formulairedelaccueil_error"></div>
                                     <div class="mauticform-message" id="mauticform_formulairedelaccueil_message"></div>
                                     <div class="mauticform-innerform">
-                                        
-                                    <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
-
-                                        <div id="mauticform_formulairedelaccueil_nom1" data-validate="nom1" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
-                                            <input id="mauticform_input_formulairedelaccueil_nom1" name="mauticform[nom1]" value="" placeholder="Nom" class="mauticform-input" type="text">
-                                            <span class="mauticform-errormsg" style="display: none;">Rentrez un nom valide merci.</span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_mail" data-validate="mail" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-2 mauticform-required">
-                                            <input id="mauticform_input_formulairedelaccueil_mail" name="mauticform[mail]" value="" placeholder="Mail" class="mauticform-input" type="email">
-                                            <span class="mauticform-errormsg" style="display: none;">Rentrez un mail valide merci.</span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_telephone" data-validate="telephone" data-validation-type="tel" class="mauticform-row mauticform-tel mauticform-field-3 mauticform-required">
-                                            <input id="mauticform_input_formulairedelaccueil_telephone" name="mauticform[telephone]" value="" placeholder="Téléphone" class="mauticform-input" type="tel">
-                                            <span class="mauticform-errormsg" style="display: none;">Rentrez un numéro valide merci.</span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_nos_services" class="mauticform-row mauticform-select mauticform-field-4">
-                                            <select id="mauticform_input_formulairedelaccueil_nos_services" name="mauticform[nos_services]" value="" placeholder="Nos services" class="mauticform-selectbox">                    <option value="">Nos services</option>                    <option value="Milieu hospitalier">Milieu hospitalier</option>                    <option value="Syndicat de copropriété">Syndicat de copropriété</option>                    <option value="Interventions industrielles">Interventions industrielles</option>                    <option value="Interventions en milieu tertiaire">Interventions en milieu tertiaire</option>                    <option value="Travaux exceptionnels">Travaux exceptionnels</option>                    <option value="Nettoyage de chantiers">Nettoyage de chantiers</option>
-                                            </select>
-                                            <span class="mauticform-errormsg" style="display: none;"></span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_votre_message" class="mauticform-row mauticform-text mauticform-field-5">
-                                            <input id="mauticform_input_formulairedelaccueil_votre_message" name="mauticform[votre_message]" value="" placeholder="Message" class="mauticform-input" type="text">
-                                            <span class="mauticform-errormsg" style="display: none;"></span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_captcha" style="display: none;" class="mauticform-row mauticform-text mauticform-field-6">
-                                            <label id="mauticform_label_formulairedelaccueil_captcha" for="mauticform_input_formulairedelaccueil_captcha" class="mauticform-label">Captcha</label>
-                                            <input id="mauticform_input_formulairedelaccueil_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
-                                            <span class="mauticform-errormsg" style="display: none;"></span>
-                                        </div>
-
-                                        <div id="mauticform_formulairedelaccueil_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-7">
-                                            <button type="submit" name="mauticform[submit]" id="mauticform_input_formulairedelaccueil_submit" value="" class="mauticform-button btn btn-default">Envoyer</button>
-                                        </div>
+                                        <div class="row" data-mautic-form-page="1">
+                                            <div id="mauticform_formulairedelaccueil_nom1" data-validate="nom1" data-validation-type="text" class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input id="mauticform_input_formulairedelaccueil_nom1" name="mauticform[nom1]" value="" placeholder="Nom" class="from-control" type="text">
+                                                <span class="mauticform-errormsg" style="display: none;">Rentrez un nom valide merci.</span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_mail" data-validate="mail" data-validation-type="email" class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input id="mauticform_input_formulairedelaccueil_mail" name="mauticform[mail]" value="" placeholder="Mail" class="from-control" type="email">
+                                                <span class="mauticform-errormsg" style="display: none;">Rentrez un mail valide merci.</span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_telephone" data-validate="telephone" data-validation-type="tel" class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <input id="mauticform_input_formulairedelaccueil_telephone" name="mauticform[telephone]" value="" placeholder="Téléphone" class="from-control" type="tel">
+                                                <span class="mauticform-errormsg" style="display: none;">Rentrez un numéro valide merci.</span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_nos_services" class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                                <select id="mauticform_input_formulairedelaccueil_nos_services" name="mauticform[nos_services]" value="" placeholder="Nos services" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required">
+                                                    <option value="">Nos services</option>
+                                                    <option value="Milieu hospitalier">Milieu hospitalier</option>
+                                                    <option value="Syndicat de copropriété">Syndicat de copropriété</option>
+                                                    <option value="Interventions industrielles">Interventions industrielles</option>
+                                                    <option value="Interventions en milieu tertiaire">Interventions en milieu tertiaire</option>
+                                                    <option value="Travaux exceptionnels">Travaux exceptionnels</option>
+                                                    <option value="Nettoyage de chantiers">Nettoyage de chantiers</option>
+                                                </select>
+                                                <span class="mauticform-errormsg" style="display: none;"></span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_votre_message" class="col-lg-12 mb-30">
+                                                <input id="mauticform_input_formulairedelaccueil_votre_message" name="mauticform[votre_message]" value="" placeholder="Message" class="from-control" type="text">
+                                                <span class="mauticform-errormsg" style="display: none;"></span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_captcha" style="display: none;" class="mauticform-row mauticform-text mauticform-field-6">
+                                                <label id="mauticform_label_formulairedelaccueil_captcha" for="mauticform_input_formulairedelaccueil_captcha" class="mauticform-label">Captcha</label>
+                                                <input id="mauticform_input_formulairedelaccueil_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
+                                                <span class="mauticform-errormsg" style="display: none;"></span>
+                                            </div>
+                                            <div id="mauticform_formulairedelaccueil_submit" class="form-group mb-0">
+                                                <p class="submit-btn">
+                                                <input type="submit" name="mauticform[submit]" id="mauticform_input_formulairedelaccueil_submit" value="Envoyer">
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-
                                     <input type="hidden" name="mauticform[formId]" id="mauticform_formulairedelaccueil_id" value="1">
                                     <input type="hidden" name="mauticform[return]" id="mauticform_formulairedelaccueil_return" value="">
                                     <input type="hidden" name="mauticform[formName]" id="mauticform_formulairedelaccueil_name" value="formulairedelaccueil">
-
-                                    </form>
-                            </div>                            
-                            {#<form id="contact-form" method="post" action="mailer.php">
-                                <fieldset>
-                                    <div class="row">
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
-                                    </div> 
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
-                                    </div>   
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
-                                    </div>   
-                                    <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
-                                        <select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-                                            <option value="Your Service">Your Service</option>
-                                            <option value="House Cleaning">House Cleaning</option>
-                                            <option value="Kitchen Cleaning">Kitchen Cleaning</option>
-                                            <option value="Toilet Cleaning">Toilet Cleaning</option>
-                                            <option value="Office Cleaning">Office Cleaning</option>
-                                            <option value="Window Cleaning">Window Cleaning</option>
-                                            <option value="Carpet Cleaning">Carpet Cleaning</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-12 mb-30">
-                                        <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
-                                    </div>
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <p class="submit-btn">
-                                            <input type="submit" value="Submit Now">
-                                        </p>
-                                    </div>
-                                </fieldset>
-                            </form>#}
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
