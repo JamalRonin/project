@@ -51,10 +51,31 @@
 				<div class="col-lg-4 col-md-12 col-sm-12 md-mb-20 pl-90 md-pl-15">
 					<h3 class="footer-title black-title">S'INSCRIRE À LA NEWSLETTER </h3>
 					<p class="widget-desc">Rejoignez notre liste d'abonnés pour recevoir les dernières nouvelles et offres spéciales.</p>
-					<p>
-						<input type="email" name="email" placeholder="Your email address" required="">
-						<input type="submit" value="Subscribe Now">
-					</p>
+					<div id="mauticform_wrapper_newsletters" class="mauticform_wrapper">
+						<form autocomplete="false" role="form" method="post" action="http://mautic.net-et.sur.com.yjbt3669.odns.fr/form/submit?formId=9" id="mauticform_newsletters" data-mautic-form="newsletters" enctype="multipart/form-data">
+							<div class="mauticform-error" id="mauticform_newsletters_error"></div>
+							<div class="mauticform-message" id="mauticform_newsletters_message"></div>
+							<div class="mauticform-innerform">
+								<div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+									<div id="mauticform_newsletters_mail" data-validate="mail" data-validation-type="email">
+										<p>
+											<input id="mauticform_input_newsletters_mail" name="mauticform[mail]" value="" placeholder="votre mail"  type="email">
+										</p>
+										<span class="mauticform-errormsg" style="display: none;">Votre nom est requis, merci.</span>
+									</div>
+									<div id="mauticform_newsletters_submit" class="">
+										<p>
+											<input type="submit" name="mauticform[submit]" id="mauticform_input_newsletters_submit" value="Envoyer">
+										</p>
+									</div>
+								</div>
+							</div>
+							<input type="hidden" name="mauticform[formId]" id="mauticform_newsletters_id" value="9">
+							<input type="hidden" name="mauticform[return]" id="mauticform_newsletters_return" value="">
+							<input type="hidden" name="mauticform[formName]" id="mauticform_newsletters_name" value="newsletters">
+
+							</form>
+					</div>
 					<ul class="footer-social">  
 						<li> 
 							<a href="#"><i class="fa fa-facebook"></i></a>
