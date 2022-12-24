@@ -78,68 +78,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-5">
-				<!-- Contact Start -->
-				<div class="rs-contact contact-style5">
-					<div class="contact-section">
-						<div class="sec-title2 mb-35">
-							<h2 class="title title3 white-color">
-								Didn't Find What You<br>
-								Need? Ask Us
-							</h2>
-						</div>
-						<div class="contact-wrap">
-							<div id="form-messages"></div>
-							<form id="contact-form" method="post" action="mailer.php">
-								<fieldset>
-									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-											<input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
-										</div> 
-										<div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-											<input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
-										</div>   
-										<div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-											<input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
-										</div>   
-										<div class="col-lg-6 col-md-6 col-sm-6 mb-30">
-											<select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-												<option value="Your Service">Your Service</option>
-												<option value="House Cleaning">House Cleaning</option>
-												<option value="Kitchen Cleaning">Kitchen Cleaning</option>
-												<option value="Toilet Cleaning">Toilet Cleaning</option>
-												<option value="Office Cleaning">Office Cleaning</option>
-												<option value="Window Cleaning">Window Cleaning</option>
-												<option value="Carpet Cleaning">Carpet Cleaning</option>
-											</select>
-										</div>
-									
-										<div class="col-lg-12 mb-35">
-											<textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
-										</div>
-									</div>
-									<div class="btn-part">                                            
-										<div class="form-group mb-0">
-											<p class="submit-btn submit-btn2 faq-btn">
-												<span class="arrow-btn">
-													<input type="submit" value="Submit Now">
-												</span>
-											</p>
-										</div>
-									</div> 
-								</fieldset>
-							</form> 
-						</div>
-					</div>
-				</div>
-				<!-- Contact End -->
-			</div>
-		</div>
-	</div>
-	<div class="faq-animate">
-		<div class="animate-style">
-			<img src="assets/images/clean/cleaning-girl.jpg" alt="">
-		</div>
-	</div>
+{% include "faq/contact.html.twig" %}
 </div>
 <!-- Faq End -->
