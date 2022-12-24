@@ -47,42 +47,36 @@
 							<div class="mauticform-message" id="mauticform_faq_message"></div>
 							<div class="mauticform-innerform">
 								<div class="row mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
-
 									<div id="mauticform_faq_nom1" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required col-lg-6 col-md-6 col-sm-6 mb-22" data-validate="nom1" data-validation-type="text">
 										<div class="form-group">
 											<input id="mauticform_input_faq_nom1" name="mauticform[nom1]" value="" placeholder="Nom" class="mauticform-input form-control-mod" type="text">
 											<span class="mauticform-errormsg" style="display: none;">Rentrez un nom valide merci.</span>
 										</div>
 									</div>
-
 									<div id="mauticform_faq_prenom" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required col-lg-6 mb-30 col-md-6 col-sm-6" data-validate="prenom" data-validation-type="text">
 										<div class="form-group">
 											<input id="mauticform_input_faq_prenom" name="mauticform[prenom]" value="" placeholder="Votre prénom" class="mauticform-input form-control-mod" type="text">
 											<span class="mauticform-errormsg" style="display: none;">Rentrez un prénom valide merci.</span>
 										</div>
 									</div>
-
 									<div id="mauticform_faq_mail" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required col-lg-6 mb-30 col-md-6 col-sm-6" data-validate="mail" data-validation-type="email">
 										<div class="form-group">
 											<input id="mauticform_input_faq_mail" name="mauticform[mail]" value="" placeholder="Mail" class="mauticform-input form-control-mod" type="email">
 											<span class="mauticform-errormsg" style="display: none;">Rentrez un mail valide merci.</span>
 										</div>
 									</div>
-
 									<div id="mauticform_faq_telephone" class="mauticform-row mauticform-tel mauticform-field-4 mauticform-required col-lg-6 mb-30 col-md-6 col-sm-6" data-validate="telephone" data-validation-type="tel">
 										<div class="form-group">
 											<input id="mauticform_input_faq_telephone" name="mauticform[telephone]" value="" placeholder="Téléphone" class="mauticform-input form-control-mod" type="tel">
 											<span class="mauticform-errormsg" style="display: none;">Rentrez un numéro valide merci.</span>
 										</div>
 									</div>
-
 									<div id="mauticform_faq_societe" class="mauticform-row mauticform-text mauticform-field-5 col-lg-12 mb-30">
 										<div class="form-group">
 											<input id="mauticform_input_faq_societe" name="mauticform[societe]" value="" placeholder="Société" class="mauticform-input form-control-mod" type="text">
 											<span class="mauticform-errormsg" style="display: none;"></span>
 										</div>
 									</div>
-
 									<div id="mauticform_faq_nos_services" class="mauticform-row mauticform-select mauticform-field-6 col-lg-12 mb-30">
 										<div class="form-group">
 											<select id="mauticform_input_faq_nos_services" name="mauticform[nos_services]" value="" placeholder="Nos services" class="mauticform-selectbox form-control-mod">
@@ -97,7 +91,6 @@
 										</div>
 										<span class="mauticform-errormsg" style="display: none;"></span>
 									</div>
-
 									<div id="mauticform_faq_frequence" class="mauticform-row mauticform-select mauticform-field-7 col-lg-12 mb-30">
 										<div class="form-group">
 											<select id="mauticform_input_faq_frequence" name="mauticform[frequence][]" value="" placeholder="Sélectionner une fréquence" class="mauticform-selectbox form-control-mod">                    
@@ -108,14 +101,12 @@
 										</div>
 										<span class="mauticform-errormsg" style="display: none;"></span>
 									</div>
-
 									<div id="mauticform_faq_votre_message1" class="mauticform-row mauticform-text mauticform-field-8 col-lg-12 mb-30">
 										<div class="form-group">
 											<textarea id="mauticform_input_faq_votre_message1" name="mauticform[votre_message1]" class="mauticform-textarea form-control-mod"></textarea>
 										</div>
 										<span class="mauticform-errormsg" style="display: none;"></span>
 									</div>
-
 									<div id="mauticform_faq_captcha" style="display: none;" class="mauticform-row mauticform-text mauticform-field-9">
 										<label id="mauticform_label_faq_captcha" for="mauticform_input_faq_captcha" class="mauticform-label">Captcha</label>
 										<input id="mauticform_input_faq_captcha" name="mauticform[captcha]" value="" class="mauticform-input" type="text">
@@ -130,107 +121,11 @@
 									</div>
 								</div> 
 							</div>
-
 							<input type="hidden" name="mauticform[formId]" id="mauticform_faq_id" value="4">
 							<input type="hidden" name="mauticform[return]" id="mauticform_faq_return" value="">
 							<input type="hidden" name="mauticform[formName]" id="mauticform_faq_name" value="faq">
-
 						</form>
 					</div>
-					<form id="contact-form" method="post" action="mailer.php">
-						<fieldset>
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-6 mb-22">
-									<div class="form-group">
-										<label>First Name*</label>
-										<input id="text" name="your name" class="form-control-mod" type="text" required="">
-									</div>
-								</div> 
-								<div class="col-lg-6 col-md-6 col-sm-6 mb-22">
-									<div class="form-group">
-										<label>Last Name*</label>
-										<input id="last" name="last" class="form-control-mod" type="text" required="">
-									</div>
-								</div>   
-								<div class="col-lg-6 col-md-6 col-sm-6 mb-22">
-									<div class="form-group">
-										<label>Phone number*</label>
-										<input id="phone" name="phone" class="form-control-mod" type="text" required="">
-									</div>
-								</div>   
-								<div class="col-lg-6 col-md-6 col-sm-6 mb-22">
-									<div class="form-group">
-										<label>Email*</label>
-										<input id="email" name="email" class="form-control-mod" type="text" required="">
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 mb-22">
-									<div class="form-group">
-										<label>Company Name*</label>
-										<input id="company" name="company" class="form-control-mod" type="text" required="">
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 mb-22">
-									<div class="form-group">
-										<label>Select Services*</label>
-										<select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder"selectionner un service">
-											{# <option value="Please Select">Please Select</option> #}
-											<option value="House Cleaning">Covid-19 Cleaning</option>
-											<option value="Kitchen Cleaning">Kitchen Cleaning</option>
-											<option value="Toilet Cleaning">Toilet Cleaning</option>
-											<option value="Office Cleaning">Office Cleaning</option>
-											<option value="Window Cleaning">Window Cleaning</option>
-											<option value="Carpet Cleaning">Carpet Cleaning</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 mb-22">
-									<div class="form-group">
-										<label>Service Frequency*</label>
-										<select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-											<option value="Your Service">Please select</option>
-											<option value="One Time">One Time</option>
-											<option value="Daily">Daily</option>
-											<option value="Weekly">Weekly</option>
-											<option value="BiWeekly">BiWeekly</option>
-											<option value="Monthly">Monthly</option>
-											<option value="Quarterly">Quarterly</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 mb-22">
-									<div class="form-group">
-										<label>How did you hear about us?*</label>
-										<select name="consultation" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-											<option value="Your Service">Please select</option>
-											<option value="Facebook">Facebook</option>
-											<option value="Email">Email</option>
-											<option value="Google Ads">Google Ads</option>
-											<option value="Instagram">Instagram</option>
-											<option value="LinkedIn">LinkedIn</option>
-											<option value="Referral">Referral</option>
-											<option value="Twitter">Twitter</option>
-											<option value="Yelp">Yelp</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-lg-12 mb-25">
-									<div class="form-group">
-										<label>Comments/Questions*</label>
-										<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="btn-part">                                            
-								<div class="form-group mb-0">
-									<p class="submit-btn">
-										<input type="submit" value="Submit Now">
-									</p>
-								</div>
-							</div> 
-						</fieldset>
-					</form> 
 				</div>
 			</div>
 		</div>
