@@ -11,24 +11,24 @@
             </div>
         </div> 
         <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
-           {% for i in 0..9 %}
-                        <div class="blog-item">
+           {% for article in articles %}
+            <div class="blog-item">
                 <div class="image-wrap">
-                    <a href="single-post.html"><img src="{{asset('/images/blog/1.jpg')}}" alt=""></a>
+                    <a href="{{path('app_blog_show' ,{slug:article.slug})}}"><img src="{{asset('/images/blog/1.jpg')}}" alt=""></a>
                     <ul class="post-categories">
-                        <li><a href="blog-single.html">Commercial</a></li>
+                        <li><a href="{{path('app_blog_show' ,{slug:article.slug})}}">{{article.category}}</a></li>
                     </ul>
                 </div>
                 <div class="blog-content">
                     <ul class="blog-meta">
-                        <li class="admin"><i class="fi fi-rr-calendar"></i>27 Jan 2022</li>
+                        <li class="admin"><i class="fi fi-rr-calendar"></i>{{article.createdAt|date('d/m/Y')}} </li>
                         <li class="date"><i class="fi  fi-rr-user"></i>Admin</li>
                     </ul>
-                    <h3 class="blog-title"><a href="single-post.html">The Secret offer Cleaning Your Beadroom & Toilet</a></h3>
+                    <h3 class="blog-title"><a href="{{path('app_blog_show' ,{slug:article.slug})}}">{{article.title}}</a></h3>
                     <div class="blog-btn">
-                        <a href="single-post.html">
+                        <a href="{{path('app_blog_show' ,{slug:article.slug})}}">
                             <span class="btn-text">
-                                Read More                           
+                               Lire la suite                          
                             </span>
                             <i class="fi fi-rr-arrow-small-right"></i>
                         </a> 
