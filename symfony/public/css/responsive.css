@@ -20,7 +20,7 @@
     .container.custom {
         max-width: 1240px;
         width: 100%;
-    } 
+    }
     .container.custom2 {
         max-width: 1200px;
         width: 100%;
@@ -47,16 +47,16 @@
         width: 60px;
         height: 60px;
     }
-    .rs-services.services-style3 .sec-title2 .title{
+    .rs-services.services-style3 .sec-title2 .title {
         font-size: 33px;
         line-height: 43px;
     }
     .rs-services.services-style3 .services-main-part .services-item .services-text br,
-    .rs-services.services-style3 .sec-title2 .title br{
+    .rs-services.services-style3 .sec-title2 .title br {
         display: none;
     }
     .pl-40 {
-      padding-left: 0px;
+        padding-left: 0px;
     }
     .rs-services.services-style3 .services-main-part .services-item .services-text {
         padding: 0px 0px 0px 22px;
@@ -82,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 1366px) { 
+@media only screen and (max-width: 1366px) {
     .rs-slider.slide-home-style2 .content-wrap .title {
         font-size: 73px;
         line-height: 83px;
@@ -121,7 +121,7 @@
     .rs-footer.footer-style1.footer-style5 {
         background: #0e3c39 !important;
     }
-    .rs-footer.footer-style1 .footer-bottom .copy-right-menu li {        
+    .rs-footer.footer-style1 .footer-bottom .copy-right-menu li {
         padding: 0px 33px 0 0px;
     }
     .rs-footer.footer-style1 .footer-bottom {
@@ -132,7 +132,7 @@
     .rs-footer.footer-style1 .footer-top .widget-desc,
     .rs-footer.footer-style1 .footer-top .footer-social li a i {
         color: #fff;
-    } 
+    }
     .rs-footer.footer-style1.footer-style3 .footer-top .footer-title.black-title,
     .rs-footer.footer-style1.footer-style3 .footer-top .widget-desc,
     .rs-footer.footer-style1.footer-style3 .footer-top .footer-social li a i {
@@ -162,7 +162,7 @@
     .rs-services.services-style3 .widget-bg {
         display: none;
     }
-    .rs-services.services-style3 .services-main-part .sec-title2 .title{
+    .rs-services.services-style3 .services-main-part .sec-title2 .title {
         font-size: 28px;
         line-height: 38px;
     }
@@ -181,7 +181,7 @@
         height: 715px;
         width: auto !important;
     }
-    .rs-about.style3 .sec-title .title{
+    .rs-about.style3 .sec-title .title {
         font-size: 32px;
         line-height: 42px;
     }
@@ -204,10 +204,11 @@
         line-height: 84px;
     }
 }
+
 @media only screen and (max-width: 1199px) {
     .lg-pl-pr-15,
-    .lg-col-padding > [class*="col-"] {
-        padding-right: 15px !important; 
+    .lg-col-padding>[class*="col-"] {
+        padding-right: 15px !important;
         padding-left: 15px !important;
     }
     .rs-choose.choose-style2 .choose-main-part .services-part .services-txt .title br {
@@ -229,7 +230,7 @@
         line-height: 46px;
     }
     .rs-services.services-style3 .services-width,
-    .rs-choose.choose-style2 .choose-width{
+    .rs-choose.choose-style2 .choose-width {
         width: 100%;
     }
     .pl-70 {
@@ -238,10 +239,10 @@
     .rs-choose.choose-style2 .choose-main-part {
         padding: 50px;
     }
-    .rs-services.services-style3 .pr-40{
+    .rs-services.services-style3 .pr-40 {
         padding-right: 0;
     }
-    .rs-services.services-style3 .pl-40{
+    .rs-services.services-style3 .pl-40 {
         padding-left: 0;
     }
     .rs-services.services-style3 .services-main-part {
@@ -280,7 +281,7 @@
         top: -80px;
         font-size: 40px;
     }
-    .rs-about.style3 .sec-title .title{
+    .rs-about.style3 .sec-title .title {
         font-size: 27px;
         line-height: 37px;
     }
@@ -314,11 +315,11 @@
     .rs-services.services-style5 .flip-box-inner .flip-box-wrap .front-part .front-content-part {
         padding: 50px 20px 50px 20px;
     }
-    .rs-choose.style1 .sec-title3 .title{
+    .rs-choose.style1 .sec-title3 .title {
         font-size: 30px;
         line-height: 46px;
     }
-    .rs-choose.style1 .sec-title3 .title br{
+    .rs-choose.style1 .sec-title3 .title br {
         display: none;
     }
     .rs-features-list.feature-style3 .feature-item .rs-feature-text .title {
@@ -334,7 +335,7 @@
     .rs-contact.contact-style4 .contact-wrap {
         padding: 55px 40px 55px 40px;
     }
-    .rs-contact.contact-style4 .contact-wrap .sec-title2 .title.small{
+    .rs-contact.contact-style4 .contact-wrap .sec-title2 .title.small {
         font-size: 30px;
         line-height: 40px;
     }
@@ -355,6 +356,7 @@
         padding: 30px 20px;
     }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .pr-83 {
         padding-right: 27px;
@@ -378,7 +380,7 @@
         max-width: 64px;
         top: 57%;
         left: 79%;
-    }   
+    }
     .rs-testimonial.testimonial-style2 .testi-item .testi-wrap .item-content-basic p {
         font-size: 16px;
     }
@@ -417,14 +419,14 @@
         font-size: 29px;
         line-height: 39px;
     }
-    .rs-about.style1 .sec-title{
+    .rs-about.style1 .sec-title {
         padding-left: 30px;
     }
     .rs-about.style1 .about-images .about-widget {
         right: 35px;
         top: 363px;
     }
-    .rs-choose.style1 .sec-title .title{
+    .rs-choose.style1 .sec-title .title {
         font-size: 25px;
         line-height: 35px;
     }
@@ -461,8 +463,8 @@
         line-height: 30px;
     }
     .rs-about.style1 .sec-title3 .title {
-      font-size: 30px;
-      line-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
     }
     .rs-pricing.pricing-style1.pricing-style2 .pricing-wrap-widget .pricing-table-middle .pricing-icon {
         right: -48%;
@@ -510,21 +512,21 @@
     }
 }
 
-@media screen and (min-width: 992px){
-    .nav-menu .rs-mega-menu > a:after, 
-    .nav-menu > .menu-item-has-children > a:after {
+@media screen and (min-width: 992px) {
+    .nav-menu .rs-mega-menu>a:after,
+    .nav-menu>.menu-item-has-children>a:after {
         content: "\f107";
         font-family: FontAwesome;
         float: right;
         margin: 2px 0 0 5px;
         display: none;
     }
-    .full-width-header .right_menu_togle{
+    .full-width-header .right_menu_togle {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
     }
-    .sticky{ 
+    .sticky {
         background: #fff !important;
         position: fixed !important;
         top: 0px;
@@ -545,7 +547,7 @@
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
-    .right_menu_togle.mobile-navbar-menu{
+    .right_menu_togle.mobile-navbar-menu {
         display: none;
     }
     .nav-menu ul {
@@ -560,7 +562,7 @@
         min-height: 666px;
     }
     .rs-contact.contact-style1 .space-divider,
-    .rs-contact.contact-style1 .shape-divider-bg{
+    .rs-contact.contact-style1 .shape-divider-bg {
         min-height: 741px;
     }
 }
@@ -576,19 +578,19 @@
     .order-last {
         order: unset !important;
     }
-    .md-pl-15{
+    .md-pl-15 {
         padding-left: 15px;
     }
-    .md-left{
+    .md-left {
         text-align: left !important;
-    } 
-    .md-text-center{
+    }
+    .md-text-center {
         text-align: center !important;
     }
-    .md-pr-15{
+    .md-pr-15 {
         padding-right: 15px;
     }
-    .md-mt--0{
+    .md-mt--0 {
         margin-top: 0;
     }
     .full-width-header .rs-header.header-style3 .expand-btn-inner ul .nav-link,
@@ -606,7 +608,7 @@
     }
     .full-width-header .rs-header .menu-area .logo-area img {
         max-height: 35px;
-    }  
+    }
     .full-width-header .rs-header.header-style2 .menu-area .logo-area img {
         max-height: 78px;
         margin-top: -4px;
@@ -641,8 +643,8 @@
     .rs-testimonial.testimonial-style2 .testi-animation,
     .rs-contact.contact-style1 .contact-animate .animate-style,
     .rs-testimonial.testimonial-style1 .testi-image .testi-anaimation,
-    .rs-testimonial.testimonial-style2 .testi-item .testi-wrap .images-wrap img,    
-    .rs-about.style2 .about-images .about-animation{
+    .rs-testimonial.testimonial-style2 .testi-item .testi-wrap .images-wrap img,
+    .rs-about.style2 .about-images .about-animation {
         display: none;
     }
     .rs-slider.slide-home-style2 .slide-img .slider-item .images-part img {
@@ -705,7 +707,7 @@
         font-size: 35px;
         line-height: 35px;
     }
-    .rs-services.services-style3 .services-main-part{
+    .rs-services.services-style3 .services-main-part {
         padding: 40px;
     }
     .rs-banner.banner-main-home {
@@ -725,7 +727,7 @@
     }
     .rs-banner.banner-main-home .content-wrap .description {
         font-size: 16px;
-        line-height: 26px;        
+        line-height: 26px;
         margin: 0 0 35px 0;
     }
     .rs-banner.banner-main-home .content-wrap {
@@ -780,7 +782,7 @@
         line-height: 30px;
         margin: 30px 0 12px 0;
     }
-    .rs-blog.blog-main-home .blog-item .blog-content .blog-title{
+    .rs-blog.blog-main-home .blog-item .blog-content .blog-title {
         font-size: 18px;
         line-height: 1.2;
     }
@@ -888,7 +890,7 @@
         line-height: 26px;
     }
     .rs-breadcrumbs .breadcrumbs-inner .description p br {
-       display: none;
+        display: none;
     }
     .rs-about.style4 .about-images .about-widget {
         width: 269.217px;
@@ -968,6 +970,10 @@
     .rs-testimonial.testimonial-style3.testimonial-style4 .testi-bg .testi-item .item-content p {
         padding: 66px 20px 0px 0px;
     }
+    .bg3 {
+        background: unset;
+        background-color: #007fc6;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -993,7 +999,7 @@
     .sec-title4 .title br,
     .sec-title3 .title br,
     .sec-title2 .desc br,
-    .sec-title2 .title br{
+    .sec-title2 .title br {
         display: none;
     }
     .sec-title2 .brush-content .sub-text {
@@ -1025,7 +1031,7 @@
     }
     .rs-services.services-style4 .services-item {
         margin: 0px 0px 0px 0px;
-    }   
+    }
     .rs-slider.slide-home-style2 .content-wrap .title {
         font-size: 55px;
         line-height: 70px;
@@ -1037,7 +1043,7 @@
         width: 80px;
         height: 60px;
     }
-    .rs-about.style2 .about-images .rs-animate-ab2 .rs-pie-content .number{
+    .rs-about.style2 .about-images .rs-animate-ab2 .rs-pie-content .number {
         font-size: 18px;
         line-height: 28px;
         padding: 0px 0px 0px 15px;
@@ -1092,7 +1098,7 @@
         width: 50px;
         height: 50px;
     }
-    .rs-process.style1 .all-process-item .process-item .icon-image img{
+    .rs-process.style1 .all-process-item .process-item .icon-image img {
         max-width: 43px;
     }
     .rs-process.style1 .all-process-item .process-item .number-area.number-style2 {
@@ -1237,10 +1243,10 @@
     blockquote {
         padding: 20px 27px;
     }
-    .rs-inner-blog .blog-details .blog-full .blog-content-full .title.title2, 
+    .rs-inner-blog .blog-details .blog-full .blog-content-full .title.title2,
     .rs-inner-blog .blog-details .blog-full .blog-content-full .title {
-      font-size: 20px;
-      line-height: 26px;
+        font-size: 20px;
+        line-height: 26px;
     }
     .rs-inner-blog .blog-details .blog-full .blog-content-full .comment-note textarea {
         height: 100px;
@@ -1271,7 +1277,7 @@
 
 @media only screen and (max-width: 575px) {
     .rs-services.services-style3 .services-main-part .services-item .services-text .services-txt br,
-    .sec-title .title br{
+    .sec-title .title br {
         display: none;
     }
     .rs-services.services-style3 .services-main-part .services-item .services-text {
@@ -1292,7 +1298,8 @@
         line-height: 70px;
     }
 }
-@media only screen and (max-width: 480px){
+
+@media only screen and (max-width: 480px) {
     .rs-testimonial.testimonial-style3.testimonial-style4 .testi-bg .testi-item {
         padding: 30px 20px 40px 20px;
     }
@@ -1401,7 +1408,7 @@
     .rs-counter.counter-style.counter-home3 .rs-counter-list .counter-text .counter-icon {
         width: 50px;
     }
-    .rs-counter.counter-style.counter-home3 .rs-counter-list .counter-text .counter-number .prefix, 
+    .rs-counter.counter-style.counter-home3 .rs-counter-list .counter-text .counter-number .prefix,
     .rs-counter.counter-style.counter-home3 .rs-counter-list .counter-text .counter-number .rs-count {
         font-size: 24px;
         line-height: 34px;
@@ -1446,7 +1453,7 @@
         padding: 30px 30px 30px 30px;
     }
     .rs-pricing.pricing-style1 .pricing-wrap-widget .pricing-table-middle .pricing-icon,
-    .sec-title2 .title br{
+    .sec-title2 .title br {
         display: none;
     }
     .rs-pricing.pricing-style1 .pricing-wrap-widget {
@@ -1543,5 +1550,5 @@
         width: 246px;
         max-width: 250px;
         padding: 28px 14px 19px 20px;
-    }  
+    }
 }
