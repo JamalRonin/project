@@ -109,7 +109,7 @@
     }
     .rs-footer.footer-style1,
     .rs-footer.footer-style1.footer-main-home {
-        background: url(../images/bg/footer-bg-main.jpg) !important;
+        /* background: url(../images/bg/footer-bg-main.jpg) !important; */
         background-size: unset;
     }
     .rs-footer.footer-style1.footer-style2 {
