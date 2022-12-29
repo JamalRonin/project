@@ -383,10 +383,11 @@ ul {
 }
 
 .bg7 {
-    background: url(../images/bg/testi-bg.jpg);
+    /* background: url(../images/bg/testi-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #007fc6;
 }
 
 .bg8 {
@@ -7200,7 +7201,7 @@ Video CSS
 ------------------------------------*/
 
 .rs-partner.partner-main-home {
-    background: #0179F3;
+    background: #003e63;
 }
 
 .rs-partner.partner-main-home .logo-img {
@@ -8277,9 +8278,10 @@ Video CSS
 ------------------------------------*/
 
 .rs-footer.footer-style1 {
-    background-image: url(../images/bg/footer-bg.jpg);
+    /* background-image: url(../images/bg/footer-bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #007fc6;
 }
 
 .rs-footer.footer-style1 .footer-top {
@@ -9595,11 +9597,12 @@ Video CSS
 /*------------------------------------
 	25. Footer Section CSS
 ------------------------------------*/
-.rs-footer.footer-style1 {
+
+/* .rs-footer.footer-style1 {
     background-image: url(../images/bg/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 .rs-footer.footer-style1 .footer-top {
     padding: 80px 0 70px;
 }
@@ -10845,11 +10848,12 @@ Video CSS
 /*------------------------------------
 	25. Footer Section CSS
 ------------------------------------*/
-.rs-footer.footer-style1 {
+
+/* .rs-footer.footer-style1 {
     background-image: url(../images/bg/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 .rs-footer.footer-style1 .footer-top {
     padding: 80px 0 70px;
 }
