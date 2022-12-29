@@ -337,11 +337,12 @@ ul {
     color: #ffffff;
 }
 
-.bg1 {
+
+/* .bg1 {
     background: url(../images/bg/choose-us-bg.png);
     background-position: 1600px 420px;
     background-repeat: no-repeat;
-}
+} */
 
 .bg2 {
     background: url(../images/bg/services-bg1.jpg);
@@ -359,17 +360,19 @@ ul {
 }
 
 .bg4 {
-    background-image: url(../images/bg/process-bg.jpg);
+    /* background-image: url(../images/bg/process-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #f7f6fc;
 }
 
 .bg5 {
-    background-image: url(../images/bg/project-bg.jpg);
+    background-image: url(../images/bg/project-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 120px 0px 253px 0px;
+    background-position: center;
 }
 
 .bg6 {

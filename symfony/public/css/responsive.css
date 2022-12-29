@@ -788,6 +788,9 @@
     }
     .bg5 {
         padding: 80px 0px 253px 0px;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .rs-contact.contact-style1 .widget-wrap .rs-requset {
         padding: 40px 40px 35px;
