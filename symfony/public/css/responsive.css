@@ -747,6 +747,7 @@
     .rs-services.services-style1 .services-item .services-text .services-title .title {
         font-size: 20px;
         line-height: 30px;
+        white-space: normal;
     }
     .rs-services.services-style1 .services-item .services-text {
         padding: 30px 25px 20px 25px;

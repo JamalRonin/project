@@ -390,11 +390,11 @@ ul {
     background-color: #007fc6;
 }
 
-.bg8 {
+/* .bg8 {
     background: url(../images/bg/choose-us-bg.png);
     background-position: 10% 72%;
     background-repeat: no-repeat;
-}
+} */
 
 .bg9 {
     background: url(../images/about/style3/2.png);
@@ -5836,6 +5836,7 @@ Video CSS
     line-height: 32px;
     font-weight: 700;
     margin: 0 0 10px;
+    white-space: nowrap;
 }
 
 .rs-services.services-style1 .services-item .services-text .services-title .title a {
