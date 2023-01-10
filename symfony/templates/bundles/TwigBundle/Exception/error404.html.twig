@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block nav %}{% endblock %}
+
+{% block body %}
+    <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="text-center">
+            <h1 class="text-danger">Erreur 404</h1>
+            <p class="lead">La page demandée est introuvable.</p>
+            <a href="{{ path('app_home') }}" class="btn btn-primary">Retour à l'accueil</a>
+            <p class="mt-5">Si vous pensez qu'il s'agit d'une erreur, veuillez contacter <a href="mailto:contact@web-artisanat.com">contact@web-artisanat.com</a></p>
+            <p>ou visitez <a href="https://web-artisanat.com">https://web-artisanat.com</a> pour plus d'informations</p>
+        </div>
+    </div>
+{% endblock %}
