@@ -77,5 +77,70 @@ class HomeController extends AbstractController
             'realisations' => $realisations,
         ]);
     }
+
+    /**
+     * @Route("/mentions-legales", name="app_mentions")
+     */
+    public function mentions(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
+    {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
+        return $this->render('legale/mentionsLegales.html.twig', [
+            'services' => $services,
+            'realisations' => $realisations,
+        ]);
+    }
+
+    /**
+     * @Route("/politique-de-confidentialite", name="app_confidentialite")
+     */
+    public function confidentialite(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
+    {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
+        return $this->render('legale/politiqueDeConfidentialite.html.twig', [
+            'services' => $services,
+            'realisations' => $realisations,
+        ]);
+    }
+
+    /**
+     * @Route("/cgv", name="app_cgv")
+     */
+    public function cgv(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
+    {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
+        return $this->render('legale/cgv.html.twig', [
+            'services' => $services,
+            'realisations' => $realisations,
+        ]);
+    }
+
+    /**
+     * @Route("/cookies", name="app_cookies")
+     */
+    public function cookies(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
+    {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
+        return $this->render('legale/cookies.html.twig', [
+            'services' => $services,
+            'realisations' => $realisations,            
+        ]);
+    }
+
+    /**
+     * @Route("/sitemap", name="app_sitemap")
+     */
+    public function sitemap(ServiceRepository $serviceRepository, RealisationRepository $realisationRepository): Response
+    {
+        $services = $serviceRepository->findAll();
+        $realisations = $realisationRepository->findAll();
+        return $this->render('sitemap/index.html.twig', [
+            'services' => $services,
+            'realisations' => $realisations,
+        ]);
+    }
 }
 
