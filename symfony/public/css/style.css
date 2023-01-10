@@ -274,7 +274,7 @@ h6 {
 }
 
 .yellow-bg {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .paste-bg {
@@ -512,7 +512,7 @@ ul.listing-style li {
 ul.listing-style li:before {
     content: "";
     position: absolute;
-    background: #8fc53f ;
+    background: #007fc6;
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -558,7 +558,7 @@ ul.dot-list li:before {
 }
 
 ul.dot-list.yellow-dot li:before {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 ul.dot-list.yellow-dot.services-list li {
@@ -823,7 +823,7 @@ blockquote p {
 blockquote:before {
     content: "\f129";
     font-size: 35px;
-    color: #8fc53f ;
+    color: #007fc6;
     padding-bottom: 0;
     display: inline-block;
     font-family: flaticon;
@@ -1028,7 +1028,7 @@ blockquote:before {
     font-weight: 500;
     line-height: 26px;
     color: #fff;
-    background: #8fc53f ;
+    background: #007fc6;
     z-index: 1;
     border-radius: 3px;
     transition: all 0.4s ease-in-out 0s;
@@ -1095,7 +1095,7 @@ blockquote:before {
 }
 
 .readon.view.discover {
-    background-color: #8fc53f ;
+    background-color: #007fc6;
     padding: 14px 35px;
 }
 
@@ -1119,7 +1119,7 @@ blockquote:before {
     font-size: 18px;
     text-transform: uppercase;
     padding: 15px 40px 15px 40px;
-    background-color: #8fc53f ;
+    background-color: #007fc6;
 }
 
 .readon.view.requset i {
@@ -1143,7 +1143,7 @@ blockquote:before {
     text-transform: uppercase;
     border-radius: 5px 5px 5px 5px;
     color: #000000;
-    background-color: #8fc53f ;
+    background-color: #007fc6;
 }
 
 .readon.view.requset-free i {
@@ -1199,7 +1199,7 @@ blockquote:before {
     opacity: 1;
     width: 20px;
     height: 20px;
-    background: #8fc53f ;
+    background: #007fc6;
     border-radius: 20px 0 0 0;
 }
 
@@ -1218,7 +1218,7 @@ blockquote:before {
     border-radius: 0;
     opacity: 1;
     visibility: visible;
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .readon.slide-con {
@@ -1255,7 +1255,7 @@ blockquote:before {
     opacity: 1;
     width: 20px;
     height: 20px;
-    background: #8fc53f ;
+    background: #007fc6;
     border-radius: 20px 0 0;
 }
 
@@ -1455,7 +1455,7 @@ blockquote:before {
 
 .submit-btn:hover {
     background: #8fc53f;
-    color: #8fc53f ;
+    color: #007fc6;
     opacity: 0.99;
 }
 
@@ -1501,7 +1501,7 @@ blockquote:before {
     opacity: 1;
     width: 20px;
     height: 20px;
-    background: #8fc53f ;
+    background: #007fc6;
     border-radius: 20px 0 0;
 }
 
@@ -1553,7 +1553,7 @@ blockquote:before {
 }
 
 .submit-btn.submit-btn2.faq-btn {
-    background-color: #8fc53f ;
+    background-color: #007fc6;
     border-radius: 3px;
 }
 
@@ -1573,7 +1573,7 @@ blockquote:before {
 
 .submit-btn.submit-btn3:hover {
     background: #003e63;
-    color: #8fc53f ;
+    color: #007fc6;
     opacity: .99;
 }
 
@@ -1594,7 +1594,7 @@ blockquote:before {
 
 .submit-btn.submit-btn4:hover {
     background: #1c6c28;
-    color: #8fc53f ;
+    color: #007fc6;
     opacity: .99;
 }
 
@@ -1681,7 +1681,7 @@ blockquote:before {
 /*Video Icon*/
 
 .rs-videos .animate-border .popup-border {
-    background: #8fc53f ;
+    background: #007fc6;
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -1702,7 +1702,7 @@ blockquote:before {
 
 .rs-videos .animate-border .popup-border:before {
     content: "";
-    border: 2px solid #8fc53f ;
+    border: 2px solid #007fc6;
     position: absolute;
     z-index: 0;
     left: 50%;
@@ -1719,7 +1719,7 @@ blockquote:before {
 
 .rs-videos .animate-border .popup-border:after {
     content: "";
-    border: 2px solid #8fc53f ;
+    border: 2px solid #007fc6;
     position: absolute;
     z-index: 0;
     left: 50%;
@@ -1975,7 +1975,7 @@ blockquote:before {
 
 .sec-title2 .brush-content .sub-text.yellow-color {
     font-size: 17px;
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .sec-title2 .brush-content .sub-text.small-text {
@@ -2026,7 +2026,7 @@ blockquote:before {
 }
 
 .sec-title2 .view-line a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .sec-title3 {
@@ -2045,7 +2045,7 @@ blockquote:before {
 }
 
 .sec-title3 .sub-text.yellow-color {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .sec-title3 .title {
@@ -2062,7 +2062,7 @@ blockquote:before {
 }
 
 .sec-title3 .title span.yellow-color {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .sec-title3 .description p {
@@ -2162,7 +2162,7 @@ blockquote:before {
 }
 
 .full-width-header .rs-header .toolbar-area .clearfix-btn li a i:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .full-width-header .rs-header .toolbar-area .clearfix-btn .btn-quote {
@@ -2178,7 +2178,7 @@ blockquote:before {
     border-radius: 0;
     margin-left: 15px;
     transition: all 0.4s ease-in-out 0s;
-    background: #8fc53f ;
+    background: #007fc6;
     color: #0a0a0a;
     position: relative;
     overflow: hidden;
@@ -2247,7 +2247,7 @@ blockquote:before {
 }
 
 .full-width-header .rs-header .toolbar-area.toolber-style2 .toolbar-contact .rs-contact-info li a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .full-width-header .rs-header .toolbar-area.toolber-style2 .toolbar-contact .rs-contact-info li a.no-border {
@@ -2504,7 +2504,7 @@ blockquote:before {
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children>a {
@@ -2688,7 +2688,7 @@ blockquote:before {
 .full-width-header .rs-header.header-style2 .menu-area .logo-area img {
     max-height: 150px;
     margin-top: -67px;
-    background: #8fc53f ;
+    background: #007fc6;
     padding: 23px 55px;
 }
 
@@ -2763,7 +2763,7 @@ blockquote:before {
 .full-width-header .rs-header.header-style3 .menu-area .main-menu .rs-menu ul li.active a,
 .full-width-header .rs-header.header-style3 .menu-area .main-menu .rs-menu ul li.current-menu-item>a:before,
 .full-width-header .rs-header.header-style3 .menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item>a {
-    color: #8fc53f  !important;
+    color: #007fc6 !important;
 }
 
 .full-width-header .rs-header.header-style3 .menu-area .logo-area a .sticky-logo {
@@ -2824,8 +2824,8 @@ blockquote:before {
 
 .full-width-header .rs-header.header-style3 .expand-btn-inner ul .btn-quote a {
     font-size: 14px;
-    background: #8fc53f ;
-    border-color: #8fc53f ;
+    background: #007fc6;
+    border-color: #007fc6;
     padding: 8px 22px;
     border-radius: 3px;
     color: #0a0a0a;
@@ -2906,7 +2906,7 @@ blockquote:before {
 }
 
 .full-width-header .mobile-menu .rs-menu-toggle.secondary {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .full-width-header .mobile-menu .rs-menu-toggle .nav-dots {
@@ -3462,7 +3462,7 @@ body .search-modal .close:hover {
 .rs-about.style3 .about-img .about-widget .counter-part {
     padding: 26px 40px 29px 40px;
     background-color: transparent;
-    background-image: linear-gradient(120deg, #1c6c28 32%, #8fc53f  100%);
+    background-image: linear-gradient(120deg, #1c6c28 32%, #007fc6 100%);
     border-radius: 5px 5px 5px 5px;
 }
 
@@ -3563,7 +3563,7 @@ body .search-modal .close:hover {
     border: 0;
     width: 60px;
     height: 6px;
-    background: #8fc53f ;
+    background: #007fc6;
     z-index: 1;
     margin-left: 0;
     left: 0;
@@ -3933,7 +3933,7 @@ body .search-modal .close:hover {
     position: absolute;
     left: 160px;
     top: -120px;
-    color: #8fc53f 2B;
+    color: #FFD6002B;
     font-family: "Modern Antiqua", Sans-serif;
     font-size: 61px;
     font-weight: 900;
@@ -4205,7 +4205,7 @@ body .search-modal .close:hover {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #8fc53f ;
+    color: #007fc6;
     margin: 0px 0px 15px 0px;
     display: block;
 }
@@ -4797,7 +4797,7 @@ body .search-modal .close:hover {
 
 .rs-contact.contact-style2 .contact-info-box .address-item .address-icon i {
     font-size: 30px;
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-contact.contact-style2 .contact-info-box .address-item .address-text {
@@ -4817,7 +4817,7 @@ body .search-modal .close:hover {
 }
 
 .rs-contact.contact-style2 .contact-info-box .address-item .address-text a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-contact.contact-style2 .contact-info-box .address-item .address-text .des {
@@ -4825,13 +4825,13 @@ body .search-modal .close:hover {
 }
 
 .rs-contact.contact-style2 .contact-info-box:after {
-    border-color: #8fc53f ;
+    border-color: #007fc6;
     position: absolute;
     height: 280px;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 29% 59%, 0 33%);
     left: -1px;
-    background-color: #8fc53f ;
+    background-color: #007fc6;
     top: -1px;
     content: "";
 }
@@ -5358,7 +5358,7 @@ Video CSS
 .rs-process.process-style1.process-about-style .all-process-item .process-item .number-area {
     left: 60%;
     top: 4px;
-    color: #FFD1004D;
+    color: #007fc64D;
     font-size: 60px;
     font-weight: 700;
 }
@@ -5513,7 +5513,7 @@ Video CSS
 }
 
 .rs-project.project-style1 .project-item .project-content .project-inner .title a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-project.project-style1 .project-item .project-content .project-inner .category {
@@ -5727,7 +5727,7 @@ Video CSS
     height: 4px;
     line-height: 4px;
     background-color: #007bff;
-    background-image: linear-gradient(250deg, #8fc53f  19%, #03228f 100%);
+    background-image: linear-gradient(250deg, #007fc6 19%, #03228f 100%);
     margin-bottom: 0;
     overflow: visible !important;
     width: 0;
@@ -5907,7 +5907,7 @@ Video CSS
 .rs-services.services-style2 .services-slider .services-item .services-img a:before {
     content: "";
     position: absolute;
-    background: #8fc53f ;
+    background: #007fc6;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -5930,7 +5930,7 @@ Video CSS
 }
 
 .rs-services.services-style2 .services-slider .services-item .services-content .title a:hover {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-services.services-style2 .services-slider .services-item .services-content .description {
@@ -5979,7 +5979,7 @@ Video CSS
     line-height: 50px;
     border-radius: 50%;
     font-family: uicons-regular-rounded !important;
-    background: #8fc53f ;
+    background: #007fc6;
     box-shadow: 0 6px 25px #eee;
     text-align: center;
     color: #003e63;
@@ -6921,7 +6921,7 @@ Video CSS
 .rs-team.team-style1 .team-item-wrap .team-inner-wrap .image-wrap .share-i {
     width: 50px;
     height: 50px;
-    background: #8fc53f ;
+    background: #007fc6;
     color: #003e63;
     position: absolute;
     bottom: 25px;
@@ -6978,7 +6978,7 @@ Video CSS
 .rs-team.team-style1 .team-item-wrap .team-inner-wrap .image-wrap:before {
     content: "";
     position: absolute;
-    background: #8fc53f ;
+    background: #007fc6;
     left: 0;
     right: 0;
     top: 0;
@@ -7036,7 +7036,7 @@ Video CSS
 }
 
 .rs-team.team-style1 .rs-carousel .owl-dots .owl-dot {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .rs-team.team-style1 .team-animation .animate-ball {
@@ -7328,7 +7328,7 @@ Video CSS
     top: 8%;
     padding-left: 30px;
     padding-top: 30px;
-    border: 8px solid #8fc53f ;
+    border: 8px solid #007fc6;
     background: #fff;
     width: 300px;
     height: 300px;
@@ -7503,7 +7503,7 @@ Video CSS
 }
 
 .rs-blog.blog-main-home.blog-style2 .blog-item .image-wrap .post-categories li a {
-    background-image: linear-gradient(150deg, #1c6c28 35%, #8fc53f  100%);
+    background-image: linear-gradient(150deg, #1c6c28 35%, #007fc6 100%);
 }
 
 .rs-blog.blog-main-home.blog-style2 .blog-item .blog-content .blog-title a:hover,
@@ -7607,7 +7607,7 @@ Video CSS
 }
 
 .rs-inner-blog .blog-item .blog-img .post-categories li a {
-    background: #8fc53f ;
+    background: #007fc6;
     color: #333;
     padding: 6px 20px;
     display: block;
@@ -8023,7 +8023,7 @@ Video CSS
     border-radius: 50px;
     border: none;
     transition: all 0.3s ease;
-    background: #8fc53f ;
+    background: #007fc6;
     box-shadow: unset;
     display: flex;
 }
@@ -8039,7 +8039,7 @@ Video CSS
 }
 
 .rs-testimonial.testimonial-style1.testi-home4-style .sec-title3 .description:after {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .rs-testimonial.testimonial-style2 {
@@ -8107,7 +8107,7 @@ Video CSS
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    background: #8fc53f ;
+    background: #007fc6;
     color: #003e63;
     box-shadow: 0px 0px 14px 0px rgba(254, 229, 102, 0.44);
     transform: translateY(-50%);
@@ -8248,7 +8248,7 @@ Video CSS
 }
 
 .rs-testimonial.testimonial-style3 .testi-bg .rs-carousel .owl-dots .owl-dot {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .rs-testimonial.testimonial-style3.testimonial-style4 .testi-bg {
@@ -8390,7 +8390,7 @@ Video CSS
     padding: 15px 20px;
     font-weight: 600;
     color: #0a0a0a;
-    background: #8fc53f ;
+    background: #007fc6;
     position: relative;
     border: none;
     text-transform: capitalize;
@@ -8517,7 +8517,7 @@ Video CSS
 .rs-footer.footer-style1.footer-style2 .footer-top .footer-social li a i:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copy-right-menu li a:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copyright p a {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-footer.footer-style1.footer-style3 {
@@ -8684,7 +8684,7 @@ Video CSS
     color: #003e63;
     line-height: 36px;
     transition: all 0.3s ease 0s;
-    background: #8fc53f ;
+    background: #007fc6;
     margin-left: 2px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.04);
     display: block;
@@ -9435,7 +9435,7 @@ Video CSS
     border-radius: 50px;
     border: none;
     transition: all 0.3s ease;
-    background: #8fc53f ;
+    background: #007fc6;
     box-shadow: unset;
     display: flex;
 }
@@ -9451,7 +9451,7 @@ Video CSS
 }
 
 .rs-testimonial.testimonial-style1.testi-home4-style .sec-title3 .description:after {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .rs-testimonial.testimonial-style2 {
@@ -9519,7 +9519,7 @@ Video CSS
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    background: #8fc53f ;
+    background: #007fc6;
     color: #003e63;
     box-shadow: 0px 0px 14px 0px rgba(254, 229, 102, 0.44);
     transform: translateY(-50%);
@@ -9660,7 +9660,7 @@ Video CSS
 }
 
 .rs-testimonial.testimonial-style3 .testi-bg .rs-carousel .owl-dots .owl-dot {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 
 .rs-testimonial.testimonial-style3.testimonial-style4 .testi-bg {
@@ -9802,7 +9802,7 @@ Video CSS
     padding: 15px 20px;
     font-weight: 600;
     color: #0a0a0a;
-    background: #8fc53f ;
+    background: #007fc6;
     position: relative;
     border: none;
     text-transform: capitalize;
@@ -9929,7 +9929,7 @@ Video CSS
 .rs-footer.footer-style1.footer-style2 .footer-top .footer-social li a i:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copy-right-menu li a:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copyright p a {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 
 .rs-footer.footer-style1.footer-style3 {
@@ -10096,7 +10096,7 @@ Video CSS
     color: #003e63;
     line-height: 36px;
     transition: all 0.3s ease 0s;
-    background: #8fc53f ;
+    background: #007fc6;
     margin-left: 2px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.04);
     display: block;
@@ -10800,7 +10800,7 @@ Video CSS
     border-radius: 50px;
     border: none;
     transition: all 0.3s ease;
-    background: #8fc53f ;
+    background: #007fc6;
     box-shadow: unset;
     display: flex;
 }
@@ -10813,7 +10813,7 @@ Video CSS
     background-color: #0FB6EF;
 }
 .rs-testimonial.testimonial-style1.testi-home4-style .sec-title3 .description:after {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 .rs-testimonial.testimonial-style2 {
     position: relative;
@@ -10871,7 +10871,7 @@ Video CSS
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    background: #8fc53f ;
+    background: #007fc6;
     color: #003e63;
     box-shadow: 0px 0px 14px 0px rgba(254, 229, 102, 0.44);
     transform: translateY(-50%);
@@ -10987,7 +10987,7 @@ Video CSS
     color: #ECEAEA;
 }
 .rs-testimonial.testimonial-style3 .testi-bg .rs-carousel .owl-dots .owl-dot {
-    background: #8fc53f ;
+    background: #007fc6;
 }
 .rs-testimonial.testimonial-style3.testimonial-style4 .testi-bg {
     background-color: unset;
@@ -11103,7 +11103,7 @@ Video CSS
     padding: 15px 20px;
     font-weight: 600;
     color: #0a0a0a;
-    background: #8fc53f ;
+    background: #007fc6;
     position: relative;
     border: none;
     text-transform: capitalize;
@@ -11215,7 +11215,7 @@ Video CSS
 .rs-footer.footer-style1.footer-style2 .footer-top .footer-social li a i:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copy-right-menu li a:hover,
 .rs-footer.footer-style1.footer-style2 .footer-bottom .copyright p a {
-    color: #8fc53f ;
+    color: #007fc6;
 }
 .rs-footer.footer-style1.footer-style3 {
     background: #f2f8fb;
@@ -11350,7 +11350,7 @@ Video CSS
     color: #003e63;
     line-height: 36px;
     transition: all 0.3s ease 0s;
-    background: #8fc53f ;
+    background: #007fc6;
     margin-left: 2px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.04);
     display: block;
